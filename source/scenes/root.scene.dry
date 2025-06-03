@@ -620,6 +620,8 @@ go-to: 1928_main
 
 @1928_main
 audio: shuffle music/WIMM.mp3
+new-page: true
+go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1928
 
