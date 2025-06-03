@@ -619,7 +619,7 @@ this.state.disableSaves = true;
 go-to: 1928_main
 
 @1928_main
-audio: shuffle music/WIMM.mp3
+audio: shuffle music/1928_1930/WideIsMyMotherland.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
