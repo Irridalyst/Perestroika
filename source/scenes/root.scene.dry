@@ -619,14 +619,13 @@ this.state.disableSaves = true;
 go-to: 1928_main
 
 @1928_main
-audio: shuffle music/1928_1930/WideIsMyMotherland.mp3
+audio: shuffle music/1928_1930/WideIsMyMotherland.mp3 music/1928_1930/Where does the Motherland begin_ - Yevgeny Belyaev and The Red Army Choir (1975) (mp3cut.net).mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1928
 
-It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
+It is a hopeful time for Soviet socialism. After years of stagnation, our reforms of Perestroika and Glasnost are revitalizing the economy and energizing society, paving the way toward genuine socialist renewal. On the international front, dialogue with the West has advanced, promising a historic reduction of tensions and meaningful arms agreements.
 
-Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
-
+Now, the urgent task for the Communist Party is to deepen our restructuring efforts, strengthen socialist democracy, and inspire the Soviet people to embrace this transformative moment. Under the leadership of Comrade Gorbachev, we stand at the threshold of a brighter socialist future.
 
