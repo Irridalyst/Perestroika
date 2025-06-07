@@ -9,11 +9,11 @@ view-if: breitscheid_advisor = 1
 
 Shevardnadze is a long-time Soviet diplomat who began his career in the Georgian Communist Party. He rose through the ranks as a pragmatic reformer and became Foreign Minister under Gorbachev.
 
-- @breitscheid_international
-- @breitscheid_foreign
+- @Shevardnadze_international
+- @Shevardnadze_foreign
 - @root: Return to main
 
-@breitscheid_international
+@Shevardnadze_international
 title: International Party Relations
 subtitle: Shevardnadze is one of our contacts with international socialist parties.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
@@ -21,7 +21,7 @@ choose-if: advisor_action_timer == 0
 on-arrival: advisor_action_timer = 6; international_relations_timer -= 12; last_advisor_action = 1
 go-to: international_relations
 
-@breitscheid_foreign
+@Shevardnadze_foreign
 title: Foreign Policy
 subtitle: As Foreign Minister, Shevardnadze can set our foreign policy.
 unavailable-subtitle: [? if not spd_in_government: The SPD is not in government. ?] [? if foreign_minister_party != "SPD" : The SPD does not control the Foreign Ministry. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
