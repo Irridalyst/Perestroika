@@ -549,7 +549,7 @@ Q.seydewitz_advisor = 0; // Max Seydewitz
 
 // centrist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Pfülf
-Q.hilferding_advisor = 1; // Rudolf Hilferding
+Q.hilferding_advisor = 0; // Rudolf Hilferding
 
 // Reformist advisors
 Q.severing_advisor = 0; // Carl Severing
