@@ -5,9 +5,9 @@ card-image: img/portraits/GorbachevMikhail.jpg
 view-if: wels_advisor = 1
 new-page: true
 
-= Otto Wels
+= Mikhail Gorbachev
 
-Wels is the long-time chairman of the SPD. He is a gifted organizer and a member of the centrist faction.
+Gorbachev is the General Secretary of the CPSU. He is a skilled reformer and a member of the centrist faction.
 
 - @clear_agenda
 - @party_discipline
