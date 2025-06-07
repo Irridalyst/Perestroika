@@ -1,7 +1,7 @@
 title: Mikhail Gorbachev
 is-pinned-card: true
 tags: advisor, centrist
-card-image: img/portraits/WelsOtto.jpg
+card-image: img/portraits/portraits/gorbachev.jpg
 view-if: wels_advisor = 1
 new-page: true
 
