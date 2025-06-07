@@ -365,17 +365,17 @@ go-to: advisor_menu
 
 Hermann Müller is now an advisor.
 
-@add_breitscheid
-title: Rudolf Breitscheid
-subtitle: Rudolf Breitscheid comes from a well-educated background and is one of our foreign policy leaders. {!<br><br>!}[? if difficulty < 0 : Actions - International Relations, Foreign Policy, Party Discipline ?]
+@add_Shevardnadze
+title: Eduard Shevardnadze
+subtitle: Shevardnadze is a long-time Soviet diplomat and current Foreign Minister. {!<br><br>!}[? if difficulty < 0 : Actions - International Relations, Foreign Policy, Party Discipline ?]
 is-card: true
-card-image: img/portraits/BreitscheidRudolf.jpg
-view-if: breitscheid_advisor = 0 and n_advisors < 3
-on-arrival: breitscheid_advisor = 1; n_advisors += 1
+card-image: img/portraits/ShevardnadzeEduard.jpg
+view-if: Shevardnadze_advisor = 0 and n_advisors < 3
+on-arrival: Shevardnadze_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: center_advisor
 
-Rudolf Breitscheid is now an advisor.
+Eduard Shevardnadze is now an advisor.
 
 # reformist
 
