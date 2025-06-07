@@ -1,9 +1,9 @@
 title: Eduard Shevardnadze
 is-pinned-card: true 
 tags: advisor, centrist
-card-image: img/portraits/BreitscheidRudolf.jpg
+card-image: img/portraits/ShevardnadzeEduard.jpg
 new-page: true
-view-if: breitscheid_advisor = 1
+view-if: Shevardnadze_advisor = 1
 
 = Eduard Shevardnadze
 
