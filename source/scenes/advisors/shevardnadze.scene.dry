@@ -9,8 +9,8 @@ view-if: shevardnadze_advisor = 1
 
 Shevardnadze is a long-time Soviet diplomat who began his career in the Georgian Communist Party. He rose through the ranks as a pragmatic reformer and became Foreign Minister under Gorbachev.
 
-- @Shevardnadze_international
-- @Shevardnadze_foreign
+- @shevardnadze_international
+- @shevardnadze_foreign
 - @root: Return to main
 
 @shevardnadze_international
