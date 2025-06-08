@@ -1,0 +1,31 @@
+title: Viktor Chebrikov
+is-pinned-card: true
+tags: advisor, left
+card-image: img/portraits/ChebrikovViktor.jpg
+view-if: chebrikov_advisor = 1
+new-page: true 
+
+= Viktor Chebrikov
+
+Chebrikov is a veteran KGB official and a staunch conservative. He rose through the security apparatus and became head of the KGB in the 1980s. Loyal to party orthodoxy, he opposes liberal reforms and supports a strong centralized state.
+
+- @building_the_hardliners
+- @police_affairs
+- @root: Return to main
+
+@building_the_hardliners
+title: Building the Hardliners
+subtitle: Push the CPSU to the left.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; left_strength += 10; left_dissent -= 8; reformist_dissent += 3
+
+We have increased the strength of the hardline faction with the CPSU. This raised concern among the moderate reformists in the party.
+
+@police_affairs
+title: KGB affairs 
+subtitle: We can set our police policy. 
+choose-if: advisor_action_timer == 0 and spd_in_government and interior_minister_party == "SPD"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not in government. ?][? if interior_minister_party != "SPD": The SPD does not have the Interior ministry. ?]
+on-arrival: advisor_action_timer = 6; police_timer -= 6; last_advisor_action = 1
+go-to: police
