@@ -1,19 +1,20 @@
 title: 1989
 subtitle: A new year 
-audio: clear shuffle music/1990_1992/Кончится лето.mp3
+audio: clear shuffle music/1990_1992/KinoLeto.mp3
+on-arrival: {!
+// increase NSDAP vote share 
+Q.unemployed += 6.8; 
+Q.inflation -= 4;
+if (Q.budget > 0) {
+    Q.budget -= 1;
+}
+// historical: -1.4
+Q.economic_growth -= 1;
+// moved demographic changes to post_event
+!}
 tags: event
 view-if: year = 1989 and month = 1 
 priority: 2
 max-visits: 1
-
-script: 
-    Q.inflation -= 4;
-    if (Q.budget > 0) {
-        Q.budget -= 1;
-    }
-    // historical: -1.4
-    Q.economic_growth -= 1;
-    // moved demographic changes to post_event
-
 
 A new year begins. The economic crisis is worsening throughout the world, with no end in sight. The NSDAP seems to be strengthening in local elections. All very worrisome trends.
