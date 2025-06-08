@@ -329,9 +329,9 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Hindenburg";
-// starting chancellor: Wilhelm Marx
-Q.chancellor = "Marx";
+Q.president = "Gorbachev";
+// starting chancellor: Nikolai Ryzhkov
+Q.chancellor = "Ryzhkov";
 Q.chancellor_party = 'Z';
 Q.spd_in_government = 0;
 Q.z_in_government = 1;
@@ -540,7 +540,7 @@ Q.shevardnadze_advisor = 1; // Eduard Shevardnadze
 
 // left advisors
 Q.sender_advisor = 0; // Toni Sender
-Q.shevardnadze_advisor = 1; // Eduard Shevardnadze
+Q.chebrikov_advisor = 1; // Viktor Chebrikov
 Q.levi_dead = 0;
 Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
 Q.seydewitz_advisor = 0; // Max Seydewitz
