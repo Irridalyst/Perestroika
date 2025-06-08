@@ -494,7 +494,10 @@ Q.n_elections = 0;
 // number of elections without a clear majority.
 Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
-Q.in_election = 0;
+Q.in_election = 1;
+Q.next_election_year = 1990;
+Q.next_election_month = 2;
+Q.next_election_time = 5;
 // government affairs timers
 Q.agricultural_policy_timer = 0;
 Q.domestic_enemies_timer = 0;
