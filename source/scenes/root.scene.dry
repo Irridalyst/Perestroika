@@ -610,7 +610,7 @@ this.state.disableSaves = true;
 go-to: 1987_main
 
 @1987_main
-audio: shuffle music/1987_1989/WDTMB.mp3 music/1987_1989/TheInternationale.mp3
+audio: shuffle music/1987_1989/WDTMB.mp3 music/1987_1989/TheInternationale.mp3 music/1987_1989/WideIsMyMotherland.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
