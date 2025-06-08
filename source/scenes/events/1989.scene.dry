@@ -1,6 +1,6 @@
 title: 1989
 subtitle: A new year 
-Q.unemployed += 6.8; 
+audio: clear shuffle music/1990_1992/Кончится лето.mp3
 Q.inflation -= 4;
 if (Q.budget > 0) {
     Q.budget -= 1;
