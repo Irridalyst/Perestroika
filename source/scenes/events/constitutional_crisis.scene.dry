@@ -12,9 +12,10 @@ Tensions run high in Berlin. The Communists are planning a demonstration to comm
 
 Many non-communists are afraid of the possibility of another violent uprising, and our allies in the Prussian coalition are asking the Prussian Interior Ministry to ban the demonstrations.
 
-- @Execute Order 66
+- @execute
 
-@Execute Order 66
+@execute
+title: holy skibidi
 subtitle: Errr... what's the plan here?
 on-arrival: resources +=3
 
