@@ -1,6 +1,6 @@
 title: 1989
 subtitle: A new year 
-audio: clear shuffle music/1990_1992/KinoLeto.mp3
+audio: shuffle music/1990_1992/KinoLeto.mp3
 on-arrival: {!
 // increase NSDAP vote share 
 Q.unemployed += 6.8; 
