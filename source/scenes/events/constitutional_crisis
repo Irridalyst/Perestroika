@@ -1,0 +1,21 @@
+title: Hardliners Surround the White House!
+new-page: true
+subtitle: skibidi toilet
+tags: event
+view-if: year = 1991 and month = 2
+max-visits: 1
+face-image: img/redfront.jpg
+
+= Hardliners Surround the White House!
+
+Tensions run high in Berlin. The Communists are planning a demonstration to commemorate the 10th anniversary of the Spartacist Uprising. No one has forgotten that it was our party members who ordered the uprising's suppression, and the Communists still blame us for the deaths of Rosa Luxemburg and Karl Liebknecht.
+
+Many non-communists are afraid of the possibility of another violent uprising, and our allies in the Prussian coalition are asking the Prussian Interior Ministry to ban the demonstrations.
+
+- @Execute Order 66
+
+@Execute Order 66
+subtitle: Errr... what's the plan here?
+on-arrival: resources +=3
+
+What else would happen? lmao.
