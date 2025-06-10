@@ -11,12 +11,13 @@ on-display: {!
 
     var image = new Image();  
     image.className = "face-img";  
-    image.src = "img/portraits/WhiteHouseMoscow";  
+    image.src = "img/ConstitutionalCrisis1.jpg";  
 
     cardEl.appendChild(image);  
     var contentDiv = document.querySelector("#page #mid_panel #content");
     contentDiv.appendChild(cardEl);
 !}
+set-bg: img/ConstitutionalCrisis2.jpg
 
 = Hardliners Surround the White House!
 
