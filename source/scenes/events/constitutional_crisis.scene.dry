@@ -4,7 +4,7 @@ subtitle: skibidi toilet
 tags: event
 view-if: year = 1987 and month = 3
 max-visits: 1
-audio: shuffle music/1990_1992/KinoLeto.mp3
+audio: music/1990_1992/KinoLeto.mp3
 on-display: {!  
     var cardEl = document.createElement('div');  
     cardEl.className = "face-figure2";  
