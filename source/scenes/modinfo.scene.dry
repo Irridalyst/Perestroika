@@ -30,15 +30,10 @@ will do later
 - @flavors: Back
 
 - @back: Back
-- @back2: Back
 
 @back
 view-if: not game_over
 go-to: flavors
-
-@back2
-view-if: game_over
-go-to: game_over.eg_menu
 
 @changelog
 
