@@ -21,15 +21,25 @@ set-bg: img/ConstitutionalCrisis2.jpg
 
 = Hardliners Surround the White House!
 
-Tensions run high in Berlin. The Communists are planning a demonstration to commemorate the 10th anniversary of the Spartacist Uprising. No one has forgotten that it was our party members who ordered the uprising's suppression, and the Communists still blame us for the deaths of Rosa Luxemburg and Karl Liebknecht.
+In the sweltering weeks of August 1990, the Soviet Union trembles—not under the weight of a foreign invasion, but from a confrontation brewing deep within the Party itself. The once-monolithic structure of the CPSU now shows widening cracks, dangerous fissures splitting through the foundations of state power. Boris Yeltsin’s dramatic victory at the 28th Party Congress earlier this summer shocks the Party establishment to its core. His election as Chairman of the Russian SFSR Supreme Soviet—backed by populist energy, growing regional assertiveness, and a chorus of reformist voices—is more than a political triumph; it is a direct challenge to the Communist Party’s authority, and especially to the old guard who still see themselves as guardians of the Soviet order.
 
-Many non-communists are afraid of the possibility of another violent uprising, and our allies in the Prussian coalition are asking the Prussian Interior Ministry to ban the demonstrations.
+In smoky, tightly secured rooms, senior hardliners convene to confront what they perceive as a collapsing system. Among them is Viktor Chebrikov, the steely former KGB chairman whose web of influence in the security services remains vast and loyal; Dmitry Yazov, the conservative Marshal of the Soviet Union, embittered by the declining role of the military; and Oleg Shenin, a senior Party secretary and ideological enforcer, convinced that the erosion of central control spells the death of socialism. Though they differ in methods and tone, they share a single belief: if Yeltsin is not stopped now, the Union will not last another year.
 
-- @execute
+The plan they devise is swift and brutal. The “Troika,” as they refer to themselves in guarded memos, prepares to strike before winter, when nationalist unrest in the republics tends to ignite. They bide their time, waiting for a political lull in late August as Gorbachev and key reformers turn their focus to stalled constitutional talks. On the evening of August 21st, tanks begin rolling into Moscow under cover of night, ordered to secure key infrastructure. Units of the Taman and Kantemir divisions encircle the Russian White House—the symbolic and strategic heart of Yeltsin’s resistance. Military checkpoints spring up across bridges and major boulevards. Communications lines to the Supreme Soviet are cut, and several independent newspapers are raided or silenced.
 
-@execute
-title: holy skibidi
-subtitle: Errr... what's the plan here?
+State television—recently emboldened under Glasnost but still vulnerable—is swiftly taken over by KGB loyalists tied to Chebrikov. As dawn breaks, Soviet citizens wake to the echo of martial music and a grim announcement: a new <i>State Committee for the Defense of the Union</i> has taken control to “ensure the stability, legality, and territorial integrity of the USSR in the face of growing separatist and counter-revolutionary threats.” Yeltsin’s name is omitted, but the message is unmistakable. The Committee targets the RSFSR’s leadership, which recently passed resolutions asserting the supremacy of Russian law over that of the Union.
+
+Gorbachev remains silent. His absence—whether due to house arrest, coercion, or strategic calculation—fuels rumors that the Troika acts with the blessing, or at least the indifference, of senior Party officials. In the streets, armored personnel carriers rumble past barricades as citizens begin to gather outside the White House, uncertain but alert. State media brands the opposition as “foreign-sponsored provocateurs” and “criminal elements,” but few are convinced. The capital holds its breath. The fate of the Soviet Union hangs in the balance. The future of the country is uncertain...
+
+- @coup
+
+@coup
+title: ...But the coup has begun.
+subtitle: The Soviet Union undergoes its greatest test
 on-arrival: resources +=3
 
-What else would happen? lmao.
+With tanks in the streets and the State Committee’s voice on every screen, the Soviet Union enters a dark and uncertain hour.
+
+The fate of the Union no longer lies in formal sessions or Party congresses, but in backroom councils, split military commands, and the crowds gathering outside the Russian White House.
+
+Time slows. We enter the day-by-day fight for the soul of the country.
