@@ -326,7 +326,7 @@ Q.president = "Gorbachev";
 // starting chancellor: Nikolai Ryzhkov
 Q.chancellor = "Ryzhkov";
 Q.spd_in_government = 1;
-Q.z_in_government = 1;
+Q.z_in_government = 0;
 Q.ddp_in_government = 0;
 Q.dvp_in_government = 0;
 Q.dnvp_in_government = 0;
@@ -345,7 +345,7 @@ Q.in_popular_front = 0;
 Q.in_left_front = 0;
 // emergency government containing the SPD: only president Braun can do this.
 Q.in_emergency_government = 0;
-Q.in_spd_majority = 0;
+Q.in_spd_majority = 1;
 Q.grand_coalition_failed = 0;
 // if the SPD is ruling as part of a minority government
 Q.in_minority_government = 0;
