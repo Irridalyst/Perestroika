@@ -16,6 +16,7 @@ on-display: {!
     cardEl.appendChild(image);  
     var contentDiv = document.querySelector("#page #mid_panel #content");
     contentDiv.appendChild(cardEl);
+!}
 
 = Hardliners Surround the White House!
 
