@@ -2,7 +2,7 @@ title: Hardliners Surround the White House!
 new-page: true
 subtitle: Yazov, are you mad?!
 tags: event
-view-if: year = 1990 and month = 8 and Q.president == "Yeltsin"
+view-if: year = 1990 and month = 8 and president = "Yeltsin"
 max-visits: 1
 audio: music/1990_1992/KinoLeto.mp3
 on-display: {!  
