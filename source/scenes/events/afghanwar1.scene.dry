@@ -1,0 +1,45 @@
+title: The War in Afghanistan
+subtitle: The bloodshed continues...
+view-if: year = 1987 and month = 5
+max-visits: 1
+tags: event
+new-page: true
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/AfghanistanWar.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
+
+= The War in Afghanistan
+
+The Soviet intervention in Afghanistan, launched in December 1979, was originally framed as a limited operation to support a fraternal socialist government under siege. In reality, it became a long and costly war of attrition that lasted nearly a decade. What began as a show of strength soon turned into a quagmire, with Soviet troops fighting an elusive insurgency across unforgiving terrain, against Mujahideen fighters armed and financed by the United States, Pakistan, and other regional actors.
+
+By 1987, the war has become a source of deep unease and division within Soviet society and the CPSU. The conflict’s human cost—thousands of dead soldiers, traumatized veterans, and a growing number of disillusioned families—has eroded confidence in the Party’s leadership. Culturally, the war is beginning to be spoken of more openly, particularly under the banner of glasnost, and soldiers' memoirs, whispered conversations, and samizdat literature are painting a picture of a lost generation. Among reformers, there is a growing push to end the war and begin withdrawal. But hardliners argue that defeat would embolden separatists and imperialists alike. Within this debate, the question looms: was the sacrifice in Afghanistan in defense of socialism—or a futile projection of a crumbling empire?
+  
+- @fullexit: It is time to leave the East, once and forall.
+- @reduce: Scale back our presence in Afghanistan.
+- @reinforce: We must reinforce our positions at once, we cannot appear weak to the world.
+
+@fullexit
+on-arrival: left_dissent += 15; reformist_dissent -= 15
+
+The war has drained our resources and our spirit. No more lives should be lost in Kabul or Kandahar. It is time to leave the East, once and for all—and face the consequences of withdrawal with dignity.
+
+
+@reduce
+on-arrival: left_dissent += 5; reformist_dissent -= 5
+
+Total retreat would be chaos, but so is the current path. We must scale back our presence, transition responsibility to the Afghan government, and begin a gradual disengagement. Let the world see our restraint, not our collapse.
+
+
+@reinforce
+on-arrival: center_dissent += 5; reformist_dissent += 15
+
+Defeat here would echo across the republics and beyond. We must reinforce our positions at once. Weakness invites division, but strength can still secure a socialist future in the region.
