@@ -34,13 +34,13 @@ What should our foreign policy priority be?
 
 @rapprochement_west
 title: Improve our relations with the the United States.
-on-arrival: west_relation += 2; reparations_negotiation += 1
+on-arrival: west_relation += 2
 
 Although our main rivals in the geopolitical world, maintaining dialogue with the United States is essential for peace between both our nations.
 
 @reaffirm_warsaw_pact
 title: Strengthen commitment to the Warsaw Pact and deepen military integration with satellite states.
-on-arrival: east_relation += 2;
+on-arrival: east_relation += 2
 
 We also aim to improve relations with our eastern neighbors, Poland and Czechoslovakia, who are righfully terrified of German aggression. Hopefully we can convince them of our peaceful intentions.
 
