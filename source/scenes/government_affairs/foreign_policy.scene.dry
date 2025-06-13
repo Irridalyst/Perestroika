@@ -150,6 +150,9 @@ on-arrival: budget -= 1; sdapo_strength += 3; left_dissent -= 6; center_dissent 
 
 In public, we provide verbal backing to Austrian democracy, wage a war of words against Austrofascism, and promulgate additional trade sanctions. Privately, we provide financial and various forms of "support" to our comrades in Austria in their struggle against dictatorship.
 
+@root
+No new policies will be enacted at this time.
+
 @european_union
 title: Take steps to form a "European Union".
 subtitle: Is a "United States of Europe" possible?
