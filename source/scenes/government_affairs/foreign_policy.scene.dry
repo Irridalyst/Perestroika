@@ -28,6 +28,7 @@ What should our foreign policy priority be?
 - @concordat
 - @support_austria
 - @support_austria_2
+- @root: Do not enact any policies for now.
 - @easy_discard
 - @cancel_advisor_action
 
@@ -82,7 +83,7 @@ No major developments occur. Chinese officials express mild disappointment but n
 @support_socialist_allies
 title: Increase aid and political support for socialist regimes in Cuba, Vietnam, Angola, and Nicaragua.
 subtitle: This may upset the United States.
-on arrival: west_relation -=1
+on arrival: west_relation -= 1
 
 We increase shipments of arms, medicinal supplies, and natural resources to our socialist allies abroad. The United States lodges a diplomatic complaint as a result.
 
