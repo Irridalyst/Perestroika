@@ -1,0 +1,64 @@
+title:  Questions of Ideology
+subtitle: Setting the party's ideological direction.
+view-if: year = 1987 and month = 1
+max-visits: 1
+tags: event
+new-page: true
+face-image: img/ideology.jpg
+
+= Questions of Ideology
+
+The CPSU is torn between many different ideological currents. What should be our primary ideological guidance for now?
+
+Note: Your choice here will determine which faction you will "play" as for the rest of the game. 
+
+[? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
+
+- @old-guard: The principles of Lenin and the legacy of October must not be compromised. 
+- @centrist: The Party must walk a careful line—preserving its vanguard role while cautiously modernizing the system.
+- @technocrat: Ideology is meaningless if the economy collapses, the workers depend on us.
+- @reform: We must deepen glasnost and perestroika, democratize institutions, and shift power to the republics and the people.
+
+@old-guard
+on-arrival: {!
+if (Q.ideology && Q.ideology != "left") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3
+
+The hardline faction of the Party remains committed to Marxist-Leninist orthodoxy. They see liberalization as weakness and advocate for maintaining centralized authority, the command economy, and ideological discipline. For them, glasnost and perestroika are dangerous deviations.
+
+@centrist
+on-arrival: {!
+if (Q.ideology && Q.ideology != "centrist") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; reformist_dissent -= 5
+
+The centrist faction supports limited reforms to stabilize the system without dismantling it. They emphasize Party unity and pragmatic change—improving socialism without abandoning its principles. For them, reform is a means to preserve the Union.
+
+@technocrat
+on-arrival: {!
+if (Q.ideology && Q.ideology != "labor") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "labor"; labor_strength += 10; wtb_support += 1; labor_dissent -= 5; kpd_relation -= 3
+
+Technocrats in the CPSU are less interested in ideology and more focused on modernizing the Soviet economy. They favor administrative reform, streamlined governance, and reducing bureaucratic bloat. For them, effectiveness trumps slogans.
+
+@reform
+on-arrival: {!
+if (Q.ideology && Q.ideology != "reformist") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "reformist"; reformist_strength += 10; democratization += 1; reformist_dissent -= 5; z_relation += 5; dvp_relation += 5; kpd_relation -= 8; moderate_plan_support += 1
+
+The reformist wing sees democratization and transparency as necessary to save socialism from within. Inspired by figures like Yeltsin and Shevardnadze, they push for deep institutional reform, decentralization, and a new social contract with the people.
