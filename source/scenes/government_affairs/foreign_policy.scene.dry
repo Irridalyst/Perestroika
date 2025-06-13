@@ -16,6 +16,7 @@ What should our foreign policy priority be?
 
 - @rapprochement_west
 - @reaffirm_warsaw_pact
+- @prc_thaw
 - @non_aligned_outreach
 - @support_socialist_allies
 - @root: Keep the Foreign Ministry as is.
@@ -33,6 +34,37 @@ title: Strengthen commitment to the Warsaw Pact and deepen military integration 
 on-arrival: east_relation += 2
 
 We also aim to improve relations with our eastern neighbors, Poland and Czechoslovakia, who are righfully terrified of German aggression. Hopefully we can convince them of our peaceful intentions.
+
+@prc_thaw
+title: Begin normalization of relations with the People’s Republic of China.
+subtitle: An end to the Sino-Soviet split?
+
+The rift between the Soviet Union and the People’s Republic of China has persisted for decades. While both states claim to uphold Marxism-Leninism, ideological disputes, border skirmishes, and competition for global leadership fractured relations during the 1960s.
+
+Now, with China's leadership experimenting with economic reform under Deng Xiaoping, and segments of our own party calling for de-escalation, an opportunity arises to begin quiet normalization. China seeks technological expertise and raw materials, while we seek geopolitical stability—and perhaps, in time, deeper regional coordination.
+
+Our old-guard comrades are deeply suspicious, but reformists and technocrats see great potential.
+
+- @prc_aid_with_tradeoff: Offer technical aid in exchange for coordinated messaging and improved border guarantees.
+- @prc_aid_basic: Provide limited economic assistance and begin talks on border stability.
+- @prc_ignore: Leave the door open, but take no immediate action.
+
+@prc_aid_with_tradeoff
+choose-if: budget >= 1
+subtitle: -1 budget
+on-arrival: budget -= 1
+
+We send a team of engineers and economists to Beijing. In return, the PRC agrees to a quiet halt in provocative troop movements in Xinjiang and Mongolia. Reformists are pleased, while hardliners grumble about ideological betrayal.
+
+@prc_aid_basic
+choose-if: budget >= 1
+subtitle: -1 budget
+on-arrival: budget -= 1
+
+A symbolic shipment of equipment and advisors is dispatched. There is no fanfare, but a signal has been sent. The Chinese return the gesture with more open communication through diplomatic backchannels.
+
+@prc_ignore
+No major developments occur. Chinese officials express mild disappointment but note the possibility of future dialogue.
 
 @non_aligned_outreach
 title: Expand diplomatic influence in the Global South by building ties with non-aligned nations.
