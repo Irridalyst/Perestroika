@@ -8,9 +8,9 @@ card-image: img/portraits/SeveringCarl.jpg
 
 = Internal Security
 
-The Interior Ministry controls internal security throughout the German Republic. While most police work is delegated to the states, the national security agency can perform special investigations.
+The Committee for State Security (KGB) oversees internal security across the entire Soviet Union. While local enforcement is managed by republican and oblast-level branches, the KGB retains sweeping authority to conduct investigations, monitor dissidents, and suppress threats to the Party.
 
-As with the state police units and the Reichswehr, the internal police tends to be reactionary, and has serious issues with loyalty to the elected government of the Republic.
+Like the military and other organs of state power, the KGB remains deeply conservative, loyal not to reform but to the entrenched structures of Soviet authority. Its leadership is wary of liberalization efforts and poses a significant obstacle to political change.
 
 - @loyalty: Improve the loyalty of the Interior Ministry forces.
 - @investigate_corruption: Investigate corruption by big businesses.
@@ -24,7 +24,7 @@ As with the state police units and the Reichswehr, the internal police tends to 
 @loyalty
 on-arrival: interior_police_loyalty += 0.1
 
-As with the Prussian state police, there are measures we can take to root out reactionary and anti-democratic sentiment in the police. We can improve training and recruiting procedures, and identify and remove known fascists and the like.
+By reforming recruitment, training procedures, and strengthening oversight, we can begin to realign the KGB with the goals of our agenda.
 
 Current interior police loyalty: [+ interior_police_loyalty : loyalty +]
 
