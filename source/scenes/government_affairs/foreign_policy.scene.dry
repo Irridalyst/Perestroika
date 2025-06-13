@@ -12,8 +12,6 @@ go-to: fp_menu
 
 What should our foreign policy priority be?
 
-@fp_menu
-
 - @rapprochement_west
 - @reaffirm_warsaw_pact
 - @non_aligned_outreach
@@ -69,7 +67,6 @@ on-arrival: budget -= 1
 A symbolic shipment of equipment and advisors is dispatched. There is no fanfare, but a signal has been sent. The Chinese return the gesture with more open communication through diplomatic backchannels.
 
 @prc_ignore
-choose-if: budget <= 0
 No major developments occur. Chinese officials express mild disappointment but note the possibility of future dialogue.
 
 @support_socialist_allies
