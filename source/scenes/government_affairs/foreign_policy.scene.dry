@@ -28,7 +28,6 @@ What should our foreign policy priority be?
 - @concordat
 - @support_austria
 - @support_austria_2
-- @root: Do not enact any policies for now.
 - @easy_discard
 - @cancel_advisor_action
 
@@ -149,9 +148,6 @@ view-if: austrian_parliament_seen = 1 and austrian_civil_war_seen = 0
 on-arrival: budget -= 1; sdapo_strength += 3; left_dissent -= 6; center_dissent -= 6
 
 In public, we provide verbal backing to Austrian democracy, wage a war of words against Austrofascism, and promulgate additional trade sanctions. Privately, we provide financial and various forms of "support" to our comrades in Austria in their struggle against dictatorship.
-
-@root
-No new policies will be enacted at this time.
 
 @european_union
 title: Take steps to form a "European Union".
