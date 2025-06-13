@@ -66,18 +66,19 @@ Our old-guard comrades are deeply suspicious, but reformists and technocrats see
 @prc_aid_with_tradeoff
 choose-if: budget >= 1
 subtitle: -1 budget
-on-arrival: budget -= 1;
+on-arrival: budget -= 1
 
 We send a team of engineers and economists to Beijing. In return, the PRC agrees to a quiet halt in provocative troop movements in Xinjiang and Mongolia. Reformists are pleased, while hardliners grumble about ideological betrayal.
 
 @prc_aid_basic
 choose-if: budget >= 1
 subtitle: -1 budget
-on-arrival: budget -= 1; china_relation += 1; foreign_goal_completed += 1; labor_strength += 1; border_tension -= 0.5
+on-arrival: budget -= 1
 
 A symbolic shipment of equipment and advisors is dispatched. There is no fanfare, but a signal has been sent. The Chinese return the gesture with more open communication through diplomatic backchannels.
 
 @prc_ignore
+choose if: budget = 0
 No major developments occur. Chinese officials express mild disappointment but note the possibility of future dialogue.
 
 @support_socialist_allies
