@@ -3,7 +3,7 @@ new-page: true
 is-card: true
 tags: govt_affairs, cabinet
 on-arrival: month_actions += 1; foreign_policy_timer += 8
-view-if: spd_in_government = 1 and foreign_policy_timer <= 0
+view-if: spd_in_government = 1 and foreign_minister_party = "SPD" and  foreign_policy_timer <= 0
 card-image: img/portraits/WarsawPact.jpg
 go-to: fp_menu
 #subtitle: International relations and opening dialogue with the West.
@@ -66,16 +66,14 @@ Our old-guard comrades are deeply suspicious, but reformists and technocrats see
 @prc_aid_with_tradeoff
 choose-if: budget >= 1
 subtitle: -1 budget
-on-arrival:
-budget -= 1;
+on-arrival: budget -= 1;
 
 We send a team of engineers and economists to Beijing. In return, the PRC agrees to a quiet halt in provocative troop movements in Xinjiang and Mongolia. Reformists are pleased, while hardliners grumble about ideological betrayal.
 
 @prc_aid_basic
 choose-if: budget >= 1
 subtitle: -1 budget
-on-arrival:
-budget -= 1; china_relation += 1; foreign_goal_completed += 1; labor_strength += 1; border_tension -= 0.5
+on-arrival: budget -= 1; china_relation += 1; foreign_goal_completed += 1; labor_strength += 1; border_tension -= 0.5
 
 A symbolic shipment of equipment and advisors is dispatched. There is no fanfare, but a signal has been sent. The Chinese return the gesture with more open communication through diplomatic backchannels.
 
