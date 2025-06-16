@@ -40,6 +40,6 @@ on-arrival: left_dissent += 5; reformist_dissent -= 5; leftist_strength -= 5; ce
 Total retreat would be chaos, but so is the current path. We must scale back our presence, transition responsibility to the Afghan government, and begin a gradual disengagement. Let the world see our restraint, not our collapse.
 
 @reinforce
-on-arrival: center_dissent += 5; reformist_dissent += 15; leftist_strength += 10; reformist_strength -= 15 afghan_war = 2
+on-arrival: center_dissent += 5; reformist_dissent += 15; leftist_strength += 10; reformist_strength -= 15; afghan_war = 2
 
 Gorbachev goes back on his original statement, a retreat from Afghanistan would show the world that the Soviet Union is weak. Yeltsin has his supporters are up in arms about this claiming the war will lead to the country's ultimate demise.
