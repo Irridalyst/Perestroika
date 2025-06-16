@@ -22,24 +22,24 @@ on-display: {!
 The Soviet intervention in Afghanistan, launched in December 1979, was originally framed as a limited operation to support a fraternal socialist government under siege. In reality, it became a long and costly war of attrition that lasted nearly a decade. What began as a show of strength soon turned into a quagmire, with Soviet troops fighting an elusive insurgency across unforgiving terrain, against Mujahideen fighters armed and financed by the United States, Pakistan, and other regional actors.
 
 By 1987, the war has become a source of deep unease and division within Soviet society and the CPSU. The conflict’s human cost—thousands of dead soldiers, traumatized veterans, and a growing number of disillusioned families—has eroded confidence in the Party’s leadership. Culturally, the war is beginning to be spoken of more openly, particularly under the banner of glasnost, and soldiers' memoirs, whispered conversations, and samizdat literature are painting a picture of a lost generation. Among reformers, there is a growing push to end the war and begin withdrawal. But hardliners argue that defeat would embolden separatists and imperialists alike. Within this debate, the question looms: was the sacrifice in Afghanistan in defense of socialism—or a futile projection of a crumbling empire?
+
+Gorbachev had already announced plans to conduct a steady withdrawl last year with the military focusing on training local units. With the topic being brought up once more, Gorbachev is forced to make a statement...
   
 - @fullexit: It is time to leave the East, once and forall.
-- @reduce: Scale back our presence in Afghanistan.
-- @reinforce: We must reinforce our positions at once, we cannot appear weak to the world.
+- @reduce: Gorbachev stands by his original statement.
+- @reinforce: The Old Guard forces Gorbachev's hand.
 
 @fullexit
-on-arrival: left_dissent += 15; reformist_dissent -= 15
+on-arrival: left_dissent += 15; reformist_dissent -= 15; left_strength -= 20; afghan_war = 0
 
-The war has drained our resources and our spirit. No more lives should be lost in Kabul or Kandahar. It is time to leave the East, once and for all—and face the consequences of withdrawal with dignity.
-
+The Old Guard is shocked by our move! While the reformists celebrate this victory, the hardliners are furious with some lower ranking officers even handing in their resignation letters.
 
 @reduce
-on-arrival: left_dissent += 5; reformist_dissent -= 5
+on-arrival: left_dissent += 5; reformist_dissent -= 5; leftist_strength -= 5; center_strength += 5; afghan_war = 1
 
 Total retreat would be chaos, but so is the current path. We must scale back our presence, transition responsibility to the Afghan government, and begin a gradual disengagement. Let the world see our restraint, not our collapse.
 
-
 @reinforce
-on-arrival: center_dissent += 5; reformist_dissent += 15
+on-arrival: center_dissent += 5; reformist_dissent += 15; leftist_strength += 10; reformist_strength -= 15 afghan_war = 2
 
-Defeat here would echo across the republics and beyond. We must reinforce our positions at once. Weakness invites division, but strength can still secure a socialist future in the region.
+Gorbachev goes back on his original statement, a retreat from Afghanistan would show the world that the Soviet Union is weak. Yeltsin has his supporters are up in arms about this claiming the war will lead to the country's ultimate demise.
