@@ -10,4 +10,10 @@ view-if: year = 1988 and month = 1
 priority: 2
 max-visits: 1
 
-A new year begins. The economy appears to be slackening; unemployment is increasing throughout the republic, although for the most part, people are still doing well.
+A new year begins. Gorbachev's reforms of perestroika and glasnost are well underway as a further series of books and films have been unbanned. Internal resistance to Gorbachev's economic reforms are still present.
+
+[[? if afghan_war = 0: Russian troops have left all combat points in Afghanistan, with responsibility completely handed over to the local government. ?]
+
+[[? if afghan_war = 1: The withdrawal of troops from Afghanistan is expected to begin this May. Talks with the local government already underway as the first round of troops begin to finally leave Afghanistan. ?]
+
+[[? if afghan_war = 2: Reinforcements have flooded into Afghanistan across the border. International observers have already noted renewed Soviet offensives against the Mujahideen. ?]
