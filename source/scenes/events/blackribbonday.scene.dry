@@ -32,7 +32,7 @@ What was once an émigré movement, born in exile from Canada to Sweden, has now
 - @support_thaw: Publicly acknowledge the pain caused by the Pact and promise policy changes.
 
 @crackdown
-baltic_unrest += 10; west_relation -= 3; interior_police_loyalty += 0.1; reformist_dissent += 10; left_strength += 10
+interior_police_loyalty += 0.1
 
 Order swift and total suppression. Arrest the organizers, censor foreign media, and make clear that dissent will not be tolerated in the Union. Stability must be preserved at all costs.
 
