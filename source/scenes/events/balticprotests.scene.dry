@@ -1,0 +1,59 @@
+title: Black Ribbon Day Protests Sweep the Baltics
+new-page: true
+subtitle: For the first time, demonstrations break through the Iron Curtain.
+tags: event
+view-if: year = 1987 and month = 8
+max-visits: 1
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/BalticProtests.jpeg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
+
+= Black Ribbon Day Protests Sweep the Baltics
+
+On August 23rd, 1987—the anniversary of the Molotov-Ribbentrop Pact—something extraordinary occurs in the Baltic Soviet republics. In Tallinn, Riga, and Vilnius, thousands of Estonians, Latvians, and Lithuanians gather in solemn protest, defying official bans and decades of enforced silence. They come wearing black ribbons, carrying candles, and demanding recognition of the secret protocols that consigned their nations to Soviet rule. For many, this marks the first truly public expression of historical grievance since Stalin’s annexation of the region in 1940.
+
+Organized by underground independence movements—like the Estonian Group for the Publication of the Molotov-Ribbentrop Pact and its Consequences—these protests build upon years of quiet dissidence and growing disillusionment with Moscow's control. The demonstrators chant for historical truth, national dignity, and basic rights, not yet full independence, but the demand for sovereignty simmers beneath the surface. KGB agents and party officials are caught off guard. While some demonstrators are detained, the sheer size and emotional power of the protests shake local Communist Party structures and spark international media attention.
+
+What was once an émigré movement, born in exile from Canada to Sweden, has now breached the internal borders of the USSR. For the Kremlin, this is a troubling signal: the Baltic question is no longer buried. It has returned—and it is no longer only whispered in kitchens or remembered in exile. It is now chanted in the streets.
+
+- @crackdown: Authorize the KGB and local party officials to immediately suppress the protests.
+- @downplay: Treat the protests as isolated provocations, and avoid giving them legitimacy.
+- @investigate: Commission a fact-finding report on the Molotov–Ribbentrop Pact and its legacy.
+- @dialogue: Begin discreet talks with local Baltic leadership about nationalist grievances.
+- @support_thaw: Publicly acknowledge the pain caused by the Pact and promise policy changes.
+
+@crackdown
+baltic_unrest += 10; international_criticism += 5; interior_police_loyalty += .05; reformist_dissent += 10; left_strength +=10
+
+Order swift and total suppression. Arrest the organizers, censor foreign media, and make clear that dissent will not be tolerated in the Union. Stability must be preserved at all costs.
+
+@downplay
+baltic_unrest += 5; international_criticism += 2; gorbachev_popularity -= 1
+
+We publicly call the events “local disturbances instigated by foreign agents.” The protests simmer down after a few hours with some of the ringleaders "mysteriously vanishing" after a few days.
+
+@investigate
+baltic_unrest += 2; democratization += 1; reformist_support += 3; interior_police_loyalty -= 2; west_relation += 1
+
+We initiate a symbolic gesture, allowing scholars to examine the Pact and its secret protocols. This could placate protesters and show a willingness to confront the past—without yet admitting guilt.
+
+@dialogue:
+baltic_unrest -= 3; left_dissent += 10; left_strength -= 5; reformist_strength += 5
+
+Quiet diplomacy can be a valve for pressure. Talk, listen, and promise nothing concrete. But this could strengthen nationalist demands long-term.
+  
+@support_thaw:
+baltic_unrest -= 5; reformist_strength += 10; kgb_loyalty -= 3; left_strength -= 10; west_relation += 1; national_autonomy += 2; left_dissent =+ 25
+
+We boldly confront the Soviet past. A public statement by a local official admits past mistakes while promising greater transparency and regional reform. This is Gorbachev’s perestroika vision—but it risks unraveling the Union.
+
+
