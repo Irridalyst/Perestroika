@@ -32,12 +32,12 @@ What was once an émigré movement, born in exile from Canada to Sweden, has now
 - @support_thaw: Publicly acknowledge the pain caused by the Pact and promise policy changes.
 
 @crackdown
-baltic_unrest += 10; international_criticism += 5; interior_police_loyalty += .05; reformist_dissent += 10; left_strength +=10
+baltic_unrest += 10; west_relation -3; interior_police_loyalty += .05; reformist_dissent += 10; left_strength += 10
 
 Order swift and total suppression. Arrest the organizers, censor foreign media, and make clear that dissent will not be tolerated in the Union. Stability must be preserved at all costs.
 
 @downplay
-baltic_unrest += 5; international_criticism += 2; gorbachev_popularity -= 1
+baltic_unrest += 5; international_criticism -= 1; gorbachev_popularity -= 1
 
 We publicly call the events “local disturbances instigated by foreign agents.” The protests simmer down after a few hours with some of the ringleaders "mysteriously vanishing" after a few days.
 
