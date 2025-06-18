@@ -44,9 +44,6 @@ Q.dues = 2;
 Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
-// ssr crashout
-q.baltic_unrest = 5;
-
 // factions
 Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
 // should this be normalized to 100%?
