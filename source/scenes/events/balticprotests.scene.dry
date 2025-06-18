@@ -46,13 +46,13 @@ baltic_unrest += 2; democratization += 1; reformist_support += 3; interior_polic
 
 We initiate a symbolic gesture, allowing scholars to examine the Pact and its secret protocols. This could placate protesters and show a willingness to confront the past—without yet admitting guilt.
 
-@dialogue:
+@dialogue
 baltic_unrest -= 3; left_dissent += 10; left_strength -= 5; reformist_strength += 5
 
 Quiet diplomacy can be a valve for pressure. Talk, listen, and promise nothing concrete. But this could strengthen nationalist demands long-term.
   
-@support_thaw:
-baltic_unrest -= 5; reformist_strength += 10; kgb_loyalty -= 3; left_strength -= 10; west_relation += 1; national_autonomy += 2; left_dissent =+ 25
+@support_thaw
+baltic_unrest -= 5; reformist_strength += 10; kgb_loyalty -= 3; left_strength -= 10; west_relation += 1; national_autonomy += 2; left_dissent += 25
 
 We boldly confront the Soviet past. A public statement by a local official admits past mistakes while promising greater transparency and regional reform. This is Gorbachev’s perestroika vision—but it risks unraveling the Union.
 
