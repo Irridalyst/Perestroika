@@ -32,9 +32,11 @@ What was once an émigré movement, born in exile from Canada to Sweden, has now
 - @support_thaw: Publicly acknowledge the pain caused by the Pact and promise policy changes.
 
 @crackdown
-interior_police_loyalty += 0.1
+baltic_unrest += 10; west_relation -= 3; interior_police_loyalty += 1; reformist_dissent += 10; left_strength += 10
 
-Order swift and total suppression. Arrest the organizers, censor foreign media, and make clear that dissent will not be tolerated in the Union. Stability must be preserved at all costs.
+We issue the order to crackdown on the demonstrators. Local police forces use teargas and batons to disburse the crowds with many being injured as a result.
+
+Arrests are made by the dozens while international speakers lodge formal complaints.
 
 @downplay
 baltic_unrest += 5; west_relation -= 1; gorbachev_popularity -= 1
