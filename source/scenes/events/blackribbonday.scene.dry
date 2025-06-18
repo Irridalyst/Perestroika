@@ -25,9 +25,35 @@ Organized by underground independence movements—like the Estonian Group for th
 
 What was once an émigré movement, born in exile from Canada to Sweden, has now breached the internal borders of the USSR. For the Kremlin, this is a troubling signal: the Baltic question is no longer buried. It has returned—and it is no longer only whispered in kitchens or remembered in exile. It is now chanted in the streets.
 
-- @test
+- @crackdown: Authorize the KGB and local party officials to immediately suppress the protests.
+- @downplay: Treat the protests as isolated provocations, and avoid giving them legitimacy.
+- @investigate: Commission a fact-finding report on the Molotov–Ribbentrop Pact and its legacy.
+- @dialogue: Begin discreet talks with local Baltic leadership about nationalist grievances.
+- @support_thaw: Publicly acknowledge the pain caused by the Pact and promise policy changes.
 
-@test
-resources += 2
+@crackdown
+on-arrival: baltic_unrest += 10; west_relation -= 3; interior_police_loyalty += 1; reformist_dissent += 10; left_strength += 10
 
-123
+We issue the order to crackdown on the demonstrators. Local police forces use teargas and batons to disburse the crowds with many being injured as a result.
+
+Arrests are made by the dozens while international speakers lodge formal complaints.
+
+@downplay
+on-arrival: baltic_unrest += 5; west_relation -= 1; gorbachev_popularity -= 1
+
+We publicly call the events “local disturbances instigated by foreign agents.” The protests simmer down after a few hours with some of the ringleaders "mysteriously vanishing" after a few days.
+
+@investigate
+on-arrival: baltic_unrest += 2; democratization += 1; reformist_support += 3; interior_police_loyalty -= 2; west_relation += 1
+
+We initiate a symbolic gesture, allowing scholars to examine the Pact and its secret protocols. This could placate protesters and show a willingness to confront the past—without yet admitting guilt.
+
+@dialogue
+on-arrival: baltic_unrest -= 3; left_dissent += 10; left_strength -= 5; reformist_strength += 5
+
+Quiet diplomacy can be a valve for pressure. Talk, listen, and promise nothing concrete. But this could strengthen nationalist demands long-term.
+  
+@support_thaw
+on-arrival: baltic_unrest -= 5; reformist_strength += 10; kgb_loyalty -= 3; left_strength -= 10; west_relation += 1; national_autonomy += 2; left_dissent += 25
+
+We boldly confront the Soviet past. A public statement by a local official admits past mistakes while promising greater transparency and regional reform. This is Gorbachev’s perestroika vision—but it risks unraveling the Union.
