@@ -181,15 +181,13 @@ Support for the Republic: [+ pro_republic_disp +]%
 
 United States: [+ west_relation : relationship +]
 
-People's Republic of China: [+ china_relation : relationship +]
+China: [+ china_relation : relationship +]
 
 Warsaw Pact: [+ east_relation : relationship +]
 
 = International Issues
 
-Amur Border: [? if not resolved_amur : Disputed ?][? if amur_joint_admin : Joint Administration ?][? if resolved_amur and not amur_joint_admin and not amur_joint_occupation : Settled ?][? if amur_rejected : Disputed ?]
-
-Amur Negotiations: [? if resolved_amur : Complete ?][? if not resolved_amur : Negotiating ?]
+Chinese Border: [? if not resolved_amur : Disputed ?][? if amur_joint_admin : Joint Administration ?][? if resolved_amur and not amur_joint_admin and not amur_joint_occupation : Settled ?][? if amur_rejected : Disputed ?]
 
 Afghan War: [? if afghan_war = 0 : Withdrawn ?][? if afghan_war = 1 : Withdrawing ?][? if afghan_war = 2 : Involved ?]
 
@@ -200,6 +198,7 @@ German Question: [? if not resolved_german_question : Negotiating ?][? if german
 @interior
 
 = Reforms
+
 {!<span class="tooltip-text" title="goated mod">Perestroika</span>!}: [? if perestroika = 0 : Dormant ?][? if perestroika = 1 : Proposed ?][? if perestroika = 2 : Experimental ?][? if perestroika = 3 : Implemented ?][? if perestroika >= 4 : Restructuring State Institutions ?]
 
 Glasnost: [? if glasnost = 0 : Censored ?][? if glasnost = 1 : Limited Openness ?][? if glasnost = 2 : Official Policy ?][? if glasnost >= 3 : Free Expression ?]
@@ -211,6 +210,7 @@ Enterprise Autonomy: [? if enterprise_reform = 0 : Central Control ?][? if enter
 Cooperatives Legalized: [? if cooperatives_legal = 0 : Prohibited ?][? if cooperatives_legal = 1 : Legalized ?][? if cooperatives_legal >= 2 : Widespread ?]
 
 = Economy
+
 State Ownership: [? if state_ownership >= 3 : Dominant ?][? if state_ownership = 2 : Mixed ?][? if state_ownership = 1 : Shrinking ?][? if state_ownership = 0 : Dismantled ?]
 
 Shortages: [? if shortages = 0 : None ?][? if shortages = 1 : Minor ?][? if shortages = 2 : Widespread ?][? if shortages = 3 : Severe ?]
@@ -220,6 +220,7 @@ Currency Stability: [? if inflation <= 0 : Deflation ?][? if inflation > 0 and i
 Black Market: [? if black_market = 0 : Minimal ?][? if black_market = 1 : Significant ?][? if black_market >= 2 : Entrenched ?]
 
 = Civil Society
+
 Freedom of the Press: [? if press_freedom = 0 : Fully Censored ?][? if press_freedom = 1 : Monitored ?][? if press_freedom = 2 : Mixed ?][? if press_freedom >= 3 : Unregulated ?]
 
 Independent Unions: [? if unions_independent = 0 : State-Controlled ?][? if unions_independent = 1 : Hybrid ?][? if unions_independent >= 2 : Independent ?]
