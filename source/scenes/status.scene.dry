@@ -177,8 +177,55 @@ Support for the Republic: [+ pro_republic_disp +]%
 
 @foreign
 
-placeholder 2
+= Foreign Relations
+
+United States: [+ west_relation : relationship +]
+
+People's Republic of China: [+ china_relation : relationship +]
+
+Warsaw Pact: [+ east_relation : relationship +]
+
+= International Issues
+
+Amur Border: [? if not resolved_amur : Disputed ?][? if amur_joint_admin : Joint Administration ?][? if resolved_amur and not amur_joint_admin and not amur_joint_occupation : Settled ?][? if amur_rejected : Disputed ?]
+
+Amur Negotiations: [? if resolved_amur : Complete ?][? if not resolved_amur : Negotiating ?]
+
+Afghan War: [? if afghan_war = 0 : Withdrawn ?][? if afghan_war = 1 : Withdrawing ?][? if afghan_war = 2 : Involved ?]
+
+Arms Control Talks: [? if not resolved_arms_control : Negotiating ?][? if arms_control_agreed : Agreement Reached ?][? if arms_control_failed : Talks Failed ?]
+
+German Question: [? if not resolved_german_question : Negotiating ?][? if german_reunified : Reunified ?][? if german_divided : Divided ?][? if german_neutral : Neutral Status ?]
 
 @interior
 
-placeholder
+= Reforms
+{!<span class="tooltip-text" title="goated mod">Perestroika</span>!}: [? if perestroika = 0 : Dormant ?][? if perestroika = 1 : Proposed ?][? if perestroika = 2 : Experimental ?][? if perestroika = 3 : Implemented ?][? if perestroika >= 4 : Restructuring State Institutions ?]
+
+Glasnost: [? if glasnost = 0 : Censored ?][? if glasnost = 1 : Limited Openness ?][? if glasnost = 2 : Official Policy ?][? if glasnost >= 3 : Free Expression ?]
+
+Democratization: [? if democratization = 0 : One-Party Rule ?][? if democratization = 1 : Contested Elections ?][? if democratization = 2 : Multiparty Allowed ?][? if democratization >= 3 : Competitive Democracy ?]
+
+Enterprise Autonomy: [? if enterprise_reform = 0 : Central Control ?][? if enterprise_reform = 1 : Pilot Projects ?][? if enterprise_reform = 2 : Enterprise Self-Management ?][? if enterprise_reform >= 3 : Decentralized Economy ?]
+
+Cooperatives Legalized: [? if cooperatives_legal = 0 : Prohibited ?][? if cooperatives_legal = 1 : Legalized ?][? if cooperatives_legal >= 2 : Widespread ?]
+
+= Economy
+State Ownership: [? if state_ownership >= 3 : Dominant ?][? if state_ownership = 2 : Mixed ?][? if state_ownership = 1 : Shrinking ?][? if state_ownership = 0 : Dismantled ?]
+
+Shortages: [? if shortages = 0 : None ?][? if shortages = 1 : Minor ?][? if shortages = 2 : Widespread ?][? if shortages = 3 : Severe ?]
+
+Currency Stability: [? if inflation <= 0 : Deflation ?][? if inflation > 0 and inflation <= 5 : Stable ?][? if inflation > 5 and inflation < 7 : Accelerating ?][? if inflation >= 7 : Hyperinflation ?]
+
+Black Market: [? if black_market = 0 : Minimal ?][? if black_market = 1 : Significant ?][? if black_market >= 2 : Entrenched ?]
+
+= Civil Society
+Freedom of the Press: [? if press_freedom = 0 : Fully Censored ?][? if press_freedom = 1 : Monitored ?][? if press_freedom = 2 : Mixed ?][? if press_freedom >= 3 : Unregulated ?]
+
+Independent Unions: [? if unions_independent = 0 : State-Controlled ?][? if unions_independent = 1 : Hybrid ?][? if unions_independent >= 2 : Independent ?]
+
+Religion: [? if religion_policy = 0 : Suppressed ?][? if religion_policy = 1 : Tolerated ?][? if religion_policy >= 2 : Open Worship ?]
+
+NGOs and Civil Groups: [? if ngos_exist = 0 : Nonexistent ?][? if ngos_exist = 1 : Marginal ?][? if ngos_exist >= 2 : Active ?]
+
+Corruption: [? if corruption = 0 : Minimal ?][? if corruption = 1 : Common ?][? if corruption = 2 : Endemic ?]
