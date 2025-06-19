@@ -50,14 +50,14 @@ Now, with China's leadership experimenting with economic reform under Deng Xiaop
 @china_aid_big
 choose-if: budget >= 1
 subtitle: -1 budget
-on-arrival: budget -= 1; soviet_relation += 2; foreign_goal_completed += 1
+on-arrival: budget -= 1; china_relation += 2; foreign_goal_completed += 1
 
 We send a team of engineers and economists to Beijing. In return, the PRC agrees to a quiet halt in provocative troop movements in Xinjiang and Mongolia. Reformists are pleased, while hardliners grumble about ideological betrayal.
 
 @china_aid_mini
 choose-if: budget >= 1
 subtitle: -1 budget
-on-arrival: budget -= 1; soviet_relation += 1; foreign_goal_completed += 1
+on-arrival: budget -= 1; china_relation += 1; foreign_goal_completed += 1
 
 A symbolic shipment of equipment and advisors is dispatched. There is no fanfare, but a signal has been sent. The Chinese return the gesture with more open communication through diplomatic backchannels.
 
