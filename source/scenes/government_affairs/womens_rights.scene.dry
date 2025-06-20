@@ -1,4 +1,4 @@
-title: Women's Rights
+title: Religious Rights
 new-page: true
 is-card: true
 tags: govt_affairs, cabinet
@@ -6,56 +6,35 @@ view-if: spd_in_government = 1 and womens_rights_timer = 0 and chancellor_party 
 on-arrival: womens_rights_timer += 10; month_actions += 1
 card-image: img/portraits/PfülfAntonie.jpg
 frequency: 50
-max-visits: 6
+max-visits: 1
 
 = Women's Rights
 
-According to the Constitution, women are equal to men, but this is not followed in practice. Women in the workforce are not paid equally for the same work, in addition to often being pushed out of employment after marriage. Men are still favored in marriage and family policy, and there are restrictions on women's rights in many other domains. And that is not to mention the overwhelming patriarchal culture present in Germany.
+Since the Khrushchev era, the Soviet Union has officially pursued atheism as state policy. Yet with Glasnost, religious groups—Orthodox, Muslim, Catholic, Jewish, and others—are becoming more vocal in demanding the right to worship, publish religious texts, and participate in public life.
 
-For better or for worse, the Socialists stand virtually alone in supporting increased rights for women, and even within the party, the leadership does not consider it a priority. [? if spd_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
+Now, the question arises: how far are we willing to go?
 
-- @labor: Institute policies that help women in the workforce.
-- @family: Reform marriage, divorce, and property law.
-- @welfare: Improve welfare for single mothers and children.
-- @liberalize: Attempt to liberalize abortion laws.
+- @tolerate_religion: Permit private worship and cultural recognition.
+- @repeal_persecution: Lift restrictions on religion and allow open worship.
+- @reaffirm_atheism: Double down on scientific atheism.
 - @return: Do not enact any policies for now.
 - @easy_discard
 - @cancel_advisor_action
 
-@labor
-subtitle: Paid maternal leave policies, equal pay policies, and so on.
-on-arrival: womens_work += 1; womens_rights += 1; workers_spd -= 4 if unemployed > 15; new_middle_spd += 4*(1-dissent); workers_spd += 4*(1 - dissent); economic_growth += 0.1;
-max-visits: 3
+@tolerate_religion
+subtitle: Allow private practice of religion.
+on-arrival: religion_policy = 1;
 
-These policies mean that our party is increasing in popularity among the "new women" who work outside the home. [? if unemployed > 15 : However, many male workers develop a backlash towards women in the workplace, especially given the rising unemployment. ?]
+We will quietly decriminalize worship and allow traditional religious holidays to be celebrated informally.
 
-@family
-subtitle: Change family and inheritance law to treat women more equally.
-on-arrival: family_law += 1; womens_rights += 1; new_middle_spd += 2*(1-dissent); workers_spd += 3*(1-dissent); old_middle_spd -= 2; rural_spd -= 2; catholics_spd -= 4; coalition_dissent += 1; z_relation -= 4;
-max-visits: 2
+@repeal_persecution
+subtitle: This will greatly anger the Old Guard.
+on-arrival: religion_policy = 2;
 
-These policies aim to ensure that women have equal rights within a marriage, including the right to divorce. The more conservative segments of society treat our reforms as deleterious to the social fabric.
+Full religious tolerance will be permitted—including rebuilding houses of worship, publishing texts, and religious education. The conservative elements in society are furious viewing us as traitors of the revolution.
 
+@reaffirm_atheism
+subtitle: Reaffirm the state's policy on atheism.
+on-arrival: religion_policy = 0;
 
-@welfare
-subtitle: -1 budget
-choose-if: budget > 0
-on-arrival: welfare += 1; workers_spd += 5*(1-dissent); unemployed_spd += 5*(1-dissent); budget -= 1; womens_rights += 1; coalition_dissent += 1 if welfare >= 1 and unemployed >= 15; unemployed -= 0.4; inflation += 0.2; economic_growth += 0.3;
-
-We have increased welfare spending on women and children. [? if welfare >= 1 and unemployed >= 15 : Some of our coalition partners consider increased welfare spending profligate at this time. ?]
-
-
-@liberalize
-max-visits: 1
-subtitle: [? if progressive_coalition < 50 : This is unlikely to succeed; we do not have majority support. ?]
-go-to: liberalize_fail if progressive_coalition < 50; liberalize_success if progressive_coalition >= 50
-
-@liberalize_fail
-on-arrival: z_relation -= 5; coalition_dissent += 1; workers_spd += 3*(1-dissent); catholics_spd -= 5;
-
-Unfortunately, our proposal is voted down in the Reichstag, with the Catholic Center party (our long-time partners) speaking in particularly vehement opposition, and some of our own members breaking party discipline. The activists, feeling demoralized from this attempt, have decided to bide their time.
-
-@liberalize_success
-on-arrival: abortion_rights += 1; womens_rights += 1; coalition_dissent += 1; z_relation -= 8; catholics_spd -= 10; dvp_relation -= 5; workers_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); workers_z += 3; new_middle_z += 3; old_middle_z += 3; old_middle_dnvp += 3; rural_dnvp += 3; workers_nsdap -= 3; new_middle_nsdap -= 3; old_middle_nsdap -= 2; rural_nsdap -= 2; unemployed_nsdap -= 2; unemployed_z += 3; unemployed_spd += 3*(1-dissent)
-
-With the support of a "progressive coalition" including the KPD and [+ ddp_name +], we have successfully passed a bill to legalize abortion in Germany! This has heartened our more progressive supporters, while hurting our relations with the Center Party. With the increasing political discourse around abortion, the religiously-oriented Center Party and DNVP have gained conservative votes at the expense of the NSDAP.
+We must not compromise Marxist-Leninist ideology. Religion is a relic of the past.
