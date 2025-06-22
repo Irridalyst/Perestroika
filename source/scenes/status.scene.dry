@@ -234,31 +234,18 @@ Corruption: [? if corruption = 0 : Minimal ?][? if corruption = 1 : Common ?][? 
 @radio
 
 = Радио Маяк
-
-title: Радио Маяк
 on-display: {!
-    var radioDiv = document.createElement('div');
-    radioDiv.innerHTML = `
-        <h3>Старые песни (Old Music)</h3>
         <audio controls autoplay loop>
             <source src="1987_1989/WideIsMyMotherland.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-    `;
-    document.querySelector("#page #mid_panel #content").appendChild(radioDiv);
 !}
 
 = Радио Кино
 
-title: Радио Кино
 on-display: {!
-    var radioDiv = document.createElement('div');
-    radioDiv.innerHTML = `
-        <h3>Новая волна (New Music)</h3>
         <audio controls autoplay loop>
             <source src="1990_1992/KinoLeto.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-    `;
-    document.querySelector("#page #mid_panel #content").appendChild(radioDiv);
 !}
