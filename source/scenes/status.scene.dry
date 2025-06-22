@@ -230,3 +230,13 @@ Religion: [? if religion_policy = 0 : Suppressed ?][? if religion_policy = 1 : T
 NGOs and Civil Groups: [? if ngos_exist = 0 : Nonexistent ?][? if ngos_exist = 1 : Marginal ?][? if ngos_exist >= 2 : Active ?]
 
 Corruption: [? if corruption = 0 : Minimal ?][? if corruption = 1 : Common ?][? if corruption = 2 : Endemic ?]
+
+@radio
+
+= Радио Маяк
+
+123
+
+= Радио Кино
+
+testing testing
