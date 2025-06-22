@@ -235,17 +235,32 @@ Corruption: [? if corruption = 0 : Minimal ?][? if corruption = 1 : Common ?][? 
 
 = Радио Маяк
 on-display: {!
-        <audio controls autoplay loop>
-            <source src="1987_1989/WideIsMyMotherland.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+    var audio = document.createElement('audio');
+    audio.controls = true;
+    audio.autoplay = true;
+    audio.loop = true;
+
+    var source = document.createElement('source');
+    source.src = "static/1987_1989/WideIsMyMotherland.mp3";
+    source.type = "audio/mpeg";
+
+    audio.appendChild(source);
+    document.querySelector("#page #mid_panel #content").appendChild(audio);
 !}
 
 = Радио Кино
 
+= Радио Кино
 on-display: {!
-        <audio controls autoplay loop>
-            <source src="1990_1992/KinoLeto.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+    var audio = document.createElement('audio');
+    audio.controls = true;
+    audio.autoplay = true;
+    audio.loop = true;
+
+    var source = document.createElement('source');
+    source.src = "static/1990_1992/KinoLeto.mp3";
+    source.type = "audio/mpeg";
+
+    audio.appendChild(source);
+    document.querySelector("#page #mid_panel #content").appendChild(audio);
 !}
