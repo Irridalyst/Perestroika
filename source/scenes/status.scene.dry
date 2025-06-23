@@ -235,16 +235,18 @@ Corruption: [? if corruption = 0 : Minimal ?][? if corruption = 1 : Common ?][? 
 
 = Радио Маяк
 
+{! <center><img src="img/redarmychoir.jpg"></center> !}
 {!
-        <audio controls autoplay loop>
-            <source src="1987_1989/WideIsMyMotherland.mp3" type="audio/mpeg">
-        </audio>
+  <audio controls loop>
+    <source src="music/1987_1989/WideIsMyMotherland.mp3" type="audio/mpeg">
+  </audio>
 !}
 
 = Радио Кино
 
+{! <center><img src="img/Kino.png"></center> !}
 {!
-  <audio controls autoplay loop>
+  <audio controls loop>
     <source src="music/1990_1992/KinoLeto.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
