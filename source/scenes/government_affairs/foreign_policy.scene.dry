@@ -37,7 +37,7 @@ Although our main rivals in the geopolitical world, maintaining dialogue with th
 title: Negotiate a new trade deal with the United States
 subtitle: This will be a lengthy albeit worthwhile affair.
 choose-if: west_relation >= 2 and not old_guard_empowered and human_rights >= 3
-view-if: us_trade_deal =< 0 and not old_guard_empowered
+view-if: us_trade_deal = 0 and west_relation >= 2 and human_rights >= 3
 unavailable-subtitle: [? if west_relation < 2 : Our relations with the United States are too poor to attempt negotiations. ?] [? if human_rights < 3 : We need to improve our human rights before attempting talks with the United States. ?]
 on-arrival: west_relation -= 2; trade_deal += 1;
 
