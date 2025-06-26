@@ -73,8 +73,8 @@ We also aim to improve relations with our eastern neighbors, Poland and Czechosl
 title: Begin talks with the Warsaw Pact for a European Socialist Federation
 subtitle: A new Socialist Federation?
 unavailable-subtitle: [? if east_relation < 7 : Our relations with the Warsaw Pact are not good enough. ?] [? if return_to_normalcy < 1 : Our internal situation is too unstable to attempt this. ?]
-view-if: eu_progress < 3
-choose-if: east_relation >= 7 and return_to_normalcy = 1
+view-if: eu_progress < 3 and return_to_normalcy
+choose-if: east_relation >= 7 and return_to_normalcy
 on-arrival: eu_negotiation = 1; eu_progress += 1; east_relation += 1;
 
 We begin talks of forming a new Socialist Federation with our allies in the Warsaw Pact.
