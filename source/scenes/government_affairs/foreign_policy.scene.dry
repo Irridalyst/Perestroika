@@ -16,6 +16,8 @@ What should our foreign policy priority be?
 
 - @rapprochement_west
 - @reaffirm_warsaw_pact
+- @warsaweu
+- @warsaweu_2
 - @normalize_china
 - @non_aligned_outreach
 - @support_socialist_allies
@@ -35,6 +37,28 @@ on-arrival: east_relation += 2
 
 We also aim to improve relations with our eastern neighbors, Poland and Czechoslovakia, who are righfully terrified of German aggression. Hopefully we can convince them of our peaceful intentions.
 
+@warsaweu
+title: Begin talks with the Warsaw Pact for a European Socialist Federation
+subtitle: A new Socialist Federation?
+unavailable-subtitle: [? if east_relation < 7 : Our relations with the Warsaw Pact are not good enough. ?] [? if return_to_normalcy < 1 : Our internal situation is too unstable to attempt this. ?]
+view-if: wp_eu < 3
+choose-if: west_relation >= 7 and return_to_normalcy = 1
+on-arrival: eu_negotiation = 1; eu_progress += 1; east_relation += 1; 
+
+We begin talks of forming a new Socialist Federation with our allies in the Warsaw Pact.
+
+@warsaweu_2
+title: We can sign a treaty to form a European Socialist Federation
+view-if: east_relation >= 5 and >= 4 and eu_progress >= 3 and not wp_eu
+on-arrival: wp_eu = 1; unemployed -= 2 if unemployed >= 10; inflation += 2 if inflation <= -2; inflation -= 1 if inflation >= 4.5; economic_growth += 1 if economic_growth < 3;
+achievement: eu
+
+With our allies in the Warsaw Pact, we announce the creation of a European Socialist Federation. The stagnating economies of the Warsaw Pact are revitalized as an influx of goods kickstarts an economic miracle across our alliance.
+
+One of the key features of the European Socialist Federation is the free movement of people and goods along with a shared currency. 
+
+Detractors in the Warsaw Pact issue small protests about their respective country's economic independence however their complaints are overshadowed by the many benefits provided by the ESF.
+
 @normalize_china
 title: Begin normalization of relations with the People’s Republic of China.
 subtitle: An end to the Sino-Soviet split?
@@ -49,15 +73,15 @@ Now, with China's leadership experimenting with economic reform under Deng Xiaop
 
 @china_aid_big
 choose-if: budget >= 1
-subtitle: -1 budget
+subtitle: -2 budget
 on-arrival: budget -= 1; china_relation += 2; foreign_goal_completed += 1
 
 We send a team of engineers and economists to Beijing. In return, the PRC agrees to a quiet halt in provocative troop movements in Xinjiang and Mongolia. Reformists are pleased, while hardliners grumble about ideological betrayal.
 
 @china_aid_mini
-choose-if: budget >= 1
+choose-if: resources >= 2
 subtitle: -1 budget
-on-arrival: budget -= 1; china_relation += 1; foreign_goal_completed += 1
+on-arrival: resources -= 2; china_relation += 1; foreign_goal_completed += 1
 
 A symbolic shipment of equipment and advisors is dispatched. There is no fanfare, but a signal has been sent. The Chinese return the gesture with more open communication through diplomatic backchannels.
 
