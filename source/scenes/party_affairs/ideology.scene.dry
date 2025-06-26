@@ -27,7 +27,7 @@ if (Q.ideology && Q.ideology != "left") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3
+on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3; old_guard_empowered = 1
 
 The hardline faction of the Party remains committed to Marxist-Leninist orthodoxy. They see liberalization as weakness and advocate for maintaining centralized authority, the command economy, and ideological discipline. For them, glasnost and perestroika are dangerous deviations.
 
