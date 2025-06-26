@@ -1,0 +1,41 @@
+title: RSFSR Affairs
+new-page: true
+is-card: true
+view-if: rsfsr_affairs_timer <= 0
+on-arrival: rsfsr_affairs_timer += 6; month_actions += 1
+tags: govt_affairs
+card-image: img/RSFSR.jpg
+#subtitle: larp
+
+= RSFSR Affairs
+
+The RSFSR, the heartland of the Soviet Union, has historically been overshadowed institutionally by the Union government. However, recent political shifts—especially with Yeltsin’s rise to power in the RSFSR Supreme Soviet—have made it a new battleground for control over the direction of reform. Through it, new policies can be piloted, loyalists promoted, and opponents sidelined. But federal tensions may also increase as a result.
+
+- @loyal_cadres: Appoint loyal administrators to RSFSR ministries
+- @reinforce_police: Reinforce the Russian internal security apparatus and make them for loyal to our policies.
+- @coordinate_with_gorbachev: Align RSFSR policy directly with central reform plans.
+- @root: No new policies are needed.
+- @easy_discard
+- @cancel_advisor_action
+
+@loyal_cadres
+view-if: rsfsr_police_loyalty < 1
+on-arrival: rsfsr_police_loyalty += 0.1
+
+# increase police loyalty
+[? if old_guard_empowered : The internal security services in the RSFSR have long been dominated by loyalists of the old order—those who view reform with suspicion and cling to the tools of repression. By overhauling recruitment criteria, prioritizing political reliability aligned with democratic socialism, and quietly reassigning or removing the worst hardliners, we can begin shifting the balance. But such institutional change will not come easily. ?]
+
+[? if not old_guard_empowered: The internal security services in the RSFSR have long stood as a bulwark against liberal chaos and foreign subversion. Yet now, under the guise of “reform,” there are efforts to dilute the ranks with unreliable elements and purge those who have loyally defended the Soviet system for decades. These attempts to politicize recruitment and dismantle the ideological backbone of the state risk weakening discipline and opening the door to anarchy. The security apparatus must remain vigilant—not just against dissent in the streets, but against the naïveté in the Kremlin. ?]
+
+Current police loyalty: [+ prussian_police_loyalty : loyalty +].
+
+@reinforce_police
+on-arrival: rsfsr_police_strength += 20
+
+Given the growing volatility in the streets and the potential for unrest, we have opted to expand the RSFSR’s internal police forces. While this could reinforce order, it risks backlash. More boots on the ground may stabilize key cities—at least for now.
+
+@coordinate_with_gorbachev
+view-if: old_guard_empowered = 0
+on-arrival: perestroika_popularity += 1; glasnost_popularity += 1;
+
+The RSFSR is no longer a passive appendage of the Union—it is becoming a vehicle for reform. By aligning our policies directly with General Secretary Gorbachev’s initiatives, we can reinforce the legitimacy of Perestroika and Glasnost across the republic. This coordination also serves as a warning to recalcitrant officials: the center and the Russian republic are united in purpose—for now.
