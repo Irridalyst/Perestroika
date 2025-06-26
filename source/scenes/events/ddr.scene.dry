@@ -1,0 +1,42 @@
+title: The German Question Reopens
+subtitle: Unrest in the GDR is forcing our hand.
+view-if: year = 1989 and month = 10
+max-visits: 1
+tags: event
+new-page: true
+face-image: img/ddr.jpg
+
+= The German Question Reopens
+
+Mass protests have broken out across East Germany, with demonstrators calling for reform, free elections, and in many cases, reunification with the Federal Republic. The SED is struggling to maintain control, and even some within their ranks are calling for dialogue with Bonn.
+
+For decades, the GDR has been a crucial buffer for Soviet influence in Central Europe. But now the situation is slipping beyond our control. The West is watching closely. Do we support the East German leadership to preserve the status quo, pressure them to reform, or begin negotiating a controlled transition?
+
+- @support_sed: The socialist bloc must stand together.
+- @push_reforms: Let them reform under our supervision.
+- @negotiate_transition: Begin talks on a neutral, unified Germany.
+- @crackdown: Order the GDR to restore order by any means.
+
+@support_sed
+on-arrival: old_middle_nsdap += 5; new_middle_nsdap += 4; workers_nsdap += 2; unemployed_nsdap += 2; sa_strength += 50; nationalism += 6; pro_republic -= 5
+
+The GDR has been a loyal outpost of Soviet socialism for decades. To abandon the SED now would send a message of weakness to our allies and enemies alike. We authorize a package of emergency economic aid, increase KGB coordination in East Berlin, and instruct local advisors to assist the Stasi in suppressing further dissent. The world may denounce us but our bloc must not unravel.
+
+@push_reforms
+on-arrival: nationalism += 3; old_middle_nsdap += 4; new_middle_nsdap += 3; workers_nsdap += 1; sa_strength += 15; pro_republic -= 3; strife += 1
+
+If the SED cannot hold the line, perhaps they can evolve. We urge East German leadership to implement controlled reforms modeled on our own perestroika. If we manage this carefully, the GDR might survive as a reformed socialist state. Of course, there are risks: once the people taste change, they may demand more than we can offer.
+
+@negotiate_transition
+choose-if: prussian_police_loyalty >= 0.65
+unavailable-subtitle: The police are not willing to protect the film.
+on-arrival: nationalism -= 4; pro_republic += 4*(1-dissent); strife += 1
+
+The writing is on the wall—perhaps literally. East Germany is slipping, and any attempt to preserve it through force may spark catastrophe. Instead, we float a quiet proposal to Bonn: reunification, but only under strict conditions—permanent neutrality, demilitarization, and guarantees of no NATO expansion. It would be a blow to our prestige, but it might preserve stability and secure our long-term interests in Europe.
+
+@crackdown
+choose-if: prussian_police_loyalty >= 0.75
+unavailable-subtitle: The police are unable to guarantee the safety of all the attendees.
+on-arrival: nationalism -= 5; pro_republic += 5*(1-dissent); workers_nsdap -= 3; unemployed_nsdap -= 3; new_middle_nsdap -= 3
+
+The streets are full of counter-revolutionaries and Western agitators. We instruct the SED to act decisively: mass arrests, curfews, the restoration of order. Soviet troops remain on standby, but for now, this is an East German problem. The world will howl. The West German press will cry "1989 is the new 1956." Let them. Revolutions are not put down with words.
