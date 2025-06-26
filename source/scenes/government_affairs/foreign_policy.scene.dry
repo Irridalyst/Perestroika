@@ -73,14 +73,14 @@ title: Begin talks with the Warsaw Pact for a European Socialist Federation
 subtitle: A new Socialist Federation?
 unavailable-subtitle: [? if east_relation < 7 : Our relations with the Warsaw Pact are not good enough. ?] [? if return_to_normalcy < 1 : Our internal situation is too unstable to attempt this. ?]
 view-if: wp_eu < 3
-choose-if: west_relation >= 7 and return_to_normalcy = 1
-on-arrival: eu_negotiation = 1; eu_progress += 1; east_relation += 1; 
+choose-if: east_relation >= 7 and return_to_normalcy = 1
+on-arrival: eu_negotiation = 1; eu_progress += 1; east_relation += 1;
 
 We begin talks of forming a new Socialist Federation with our allies in the Warsaw Pact.
 
 @warsaweu_2
 title: We can sign a treaty to form a European Socialist Federation
-view-if: east_relation >= 5 and >= 4 and eu_progress >= 3 and not wp_eu
+view-if: east_relation >= 5 and eu_progress >= 3 and wp_eu = 0
 on-arrival: wp_eu = 1; unemployed -= 2 if unemployed >= 10; inflation += 2 if inflation <= -2; inflation -= 1 if inflation >= 4.5; economic_growth += 1 if economic_growth < 3;
 achievement: eu
 
@@ -88,7 +88,7 @@ With our allies in the Warsaw Pact, we announce the creation of a European Socia
 
 One of the key features of the European Socialist Federation is the free movement of people and goods along with a shared currency. 
 
-Detractors in the Warsaw Pact issue small protests about their respective country's economic independence however their complaints are overshadowed by the many benefits provided by the ESF.
+Detractors in the Warsaw Pact issue small protests about their respective country's economic independence; however, their complaints are overshadowed by the many benefits provided by the ESF.
 
 @normalize_china
 title: Begin normalization of relations with the People’s Republic of China.
