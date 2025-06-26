@@ -15,6 +15,8 @@ What should our foreign policy priority be?
 @fp_menu
 
 - @rapprochement_west
+- @tradedeal_west
+- @tradedeal_west_done
 - @reaffirm_warsaw_pact
 - @warsaweu
 - @warsaweu_2
@@ -30,6 +32,35 @@ title: Improve our relations with the the United States.
 on-arrival: west_relation += 2
 
 Although our main rivals in the geopolitical world, maintaining dialogue with the United States is essential for peace between both our nations.
+
+@tradedeal_west
+title: Negotiate a new trade deal with the United States
+subtitle: This will be a lengthy albeit worthwhile affair.
+choose-if: west_relation >= 2 and not old_guard_empowered and human_rights >= 3
+view-if: us_trade_deal = 0; 
+unavailable-subtitle: [? if west_relation < 2 : Our relations with the United States are too poor to attempt negotiations. ?] [? if human_rights < 3 : We need to improve our human rights before attempting talks with the United States. ?]
+on-arrival: west_relation -= 2; trade_deal += 1;
+
+We continue negotiating the terms of the debts we have accumulated to the United States, attempting to pause or at the very least lengthen our debt payment intervals.
+
+@tradedeal_west_done
+subtitle: Our negotiations have been successful.
+view-if: trade_deal <= 3 and not old_guard_empowered
+on-arrival: us_trade_deal = 1; budget += 3;
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/gorbyandreagan.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
+
+Our improvements in human rights along with our reconciliation with the United States have led to the finalization of a trade deal. Along with revitalizing our struggling economy, this is a great success for our nation and demonstrates our vision of peace on the global stage.
 
 @reaffirm_warsaw_pact
 title: Strengthen commitment to the Warsaw Pact and deepen military integration with satellite states.
