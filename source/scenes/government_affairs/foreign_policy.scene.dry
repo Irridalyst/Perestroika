@@ -44,7 +44,8 @@ on-arrival: west_relation -= 2; trade_deal += 1;
 We continue negotiating the terms of the debts we have accumulated to the United States, attempting to pause or at the very least lengthen our debt payment intervals.
 
 @tradedeal_west_done
-subtitle: Our negotiations have been successful.
+title: A Successful Trade Agreement
+subtitle: Our negotiations with the United States bear fruit.
 view-if: trade_deal <= 3 and not old_guard_empowered
 on-arrival: us_trade_deal = 1; budget += 3;
 on-display: {!  
