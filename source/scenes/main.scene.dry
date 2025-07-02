@@ -18,7 +18,7 @@ max-cards: 3
 
 [? if year = 1987 and month = 3: U.S. President Ronald Reagan addresses the American people on the Iran–Contra affair, acknowledging that his overtures to Iran had "deteriorated" into an arms-for-hostages deal. Margaret Thatcher, Prime Minister of the United Kingdom, conducts a 45-minute interview on Soviet television. ?]
 
-[? if year = 1987 and month = 4: April 13 – The governments of the Portuguese Republic and the People's Republic of China sign an agreement in which Macau will be returned to China in 1999. ?]
+[? if year = 1987 and month = 4: The governments of the Portuguese Republic and the People's Republic of China sign an agreement in which Macau will be returned to China in 1999. ?]
 
 [? if year = 1987 and month = 5: A Soviet-made Ilyushin Il-62 airliner, operated by LOT Polish Airlines, crashes into a forest just outside Warsaw, killing all 183 people on board. The USS Stark is hit by two Iraqi-owned Exocet AM39 air-to-surface missiles killing 37 sailors. ?]
 
@@ -40,7 +40,7 @@ max-cards: 3
 
 [? if year = 1988 and month = 2: A Nazi document implicates former United Nations Secretary-General and Austrian President Kurt Waldheim in World War II deportations. ?]
 
-[? if year = 1988 and month = 3: TThe first McDonald's restaurant in a country run by a Communist party opens in Belgrade, Yugoslavia. The Candle demonstration in Bratislava, Slovakia, is the first mass demonstration of the 1980s against the socialist government in Czechoslovakia. ?]
+[? if year = 1988 and month = 3: The first McDonald's restaurant in a country run by a Communist party opens in Belgrade, Yugoslavia. The Candle demonstration in Bratislava, Slovakia, is the first mass demonstration of the 1980s against the socialist government in Czechoslovakia. ?]
 
 [? if year = 1988 and month = 4: The United States Navy retaliates for the USS Samuel B. Roberts mining with Operation Praying Mantis, in a day of strikes against Iranian oil platforms and naval vessels. ?]
 
@@ -96,7 +96,7 @@ max-cards: 4
 
 [? if year = 1987 and month = 3: U.S. President Ronald Reagan addresses the American people on the Iran–Contra affair, acknowledging that his overtures to Iran had "deteriorated" into an arms-for-hostages deal. Margaret Thatcher, Prime Minister of the United Kingdom, conducts a 45-minute interview on Soviet television. ?]
 
-[? if year = 1987 and month = 4: April 13 – The governments of the Portuguese Republic and the People's Republic of China sign an agreement in which Macau will be returned to China in 1999. ?]
+[? if year = 1987 and month = 4: The governments of the Portuguese Republic and the People's Republic of China sign an agreement in which Macau will be returned to China in 1999. ?]
 
 [? if year = 1987 and month = 5: A Soviet-made Ilyushin Il-62 airliner, operated by LOT Polish Airlines, crashes into a forest just outside Warsaw, killing all 183 people on board. The USS Stark is hit by two Iraqi-owned Exocet AM39 air-to-surface missiles killing 37 sailors. ?]
 
@@ -118,7 +118,7 @@ max-cards: 4
 
 [? if year = 1988 and month = 2: A Nazi document implicates former United Nations Secretary-General and Austrian President Kurt Waldheim in World War II deportations. ?]
 
-[? if year = 1988 and month = 3: TThe first McDonald's restaurant in a country run by a Communist party opens in Belgrade, Yugoslavia. The Candle demonstration in Bratislava, Slovakia, is the first mass demonstration of the 1980s against the socialist government in Czechoslovakia. ?]
+[? if year = 1988 and month = 3: The first McDonald's restaurant in a country run by a Communist party opens in Belgrade, Yugoslavia. The Candle demonstration in Bratislava, Slovakia, is the first mass demonstration of the 1980s against the socialist government in Czechoslovakia. ?]
 
 [? if year = 1988 and month = 4: The United States Navy retaliates for the USS Samuel B. Roberts mining with Operation Praying Mantis, in a day of strikes against Iranian oil platforms and naval vessels. ?]
 
