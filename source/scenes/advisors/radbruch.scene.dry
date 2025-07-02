@@ -14,16 +14,6 @@ Gustav Radbruch is a renowned legal scholar and long-time SPD justice minister.
 - @constitutional_reform_
 - @root: Return to main
 
-
-@judiciary_
-title: Judicial Affairs
-subtitle: Enact judicial reforms.
-choose-if: advisor_action_timer = 0 and spd_in_government and justice_minister_party = "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not currently in government. ?][? if justice_minister_party != "SPD" : We do not have the Justice Ministry. ?]
-on-arrival: advisor_action_timer = 6; judiciary_timer -= 6; last_advisor_action = 1
-go-to: judiciary
-
-
 @constitutional_reform_
 title: Constitutional Reform
 subtitle: Pursue reforms of the inadequate Weimar Constitution.
