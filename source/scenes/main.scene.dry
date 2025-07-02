@@ -14,7 +14,7 @@ max-cards: 3
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
-[? if year = 1987 and month = 2: The Tower Commission rebukes U.S. President Ronald Reagan for not controlling his National Security Council staff. ?]
+[? if year = 1987 and month = 2: The Soviet oil tanker Antonio Gramsci suffers a minor shipwreck in Finnish waters en route to the Neste oil refinery in Porvoo, resulting in an oil spill of approximately 570–650 tons. The Tower Commission rebukes U.S. President Ronald Reagan for not controlling his National Security Council staff. ?]
 
 [? if year = 1987 and month = 3: U.S. President Ronald Reagan addresses the American people on the Iran–Contra affair, acknowledging that his overtures to Iran had "deteriorated" into an arms-for-hostages deal. Margaret Thatcher, Prime Minister of the United Kingdom, conducts a 45-minute interview on Soviet television. ?]
 
