@@ -92,6 +92,62 @@ max-cards: 4
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
+[? if year = 1987 and month = 2: The Tower Commission rebukes U.S. President Ronald Reagan for not controlling his National Security Council staff. ?]
+
+[? if year = 1987 and month = 3: U.S. President Ronald Reagan addresses the American people on the Iran–Contra affair, acknowledging that his overtures to Iran had "deteriorated" into an arms-for-hostages deal. Margaret Thatcher, Prime Minister of the United Kingdom, conducts a 45-minute interview on Soviet television. ?]
+
+[? if year = 1987 and month = 4: April 13 – The governments of the Portuguese Republic and the People's Republic of China sign an agreement in which Macau will be returned to China in 1999. ?]
+
+[? if year = 1987 and month = 5: A Soviet-made Ilyushin Il-62 airliner, operated by LOT Polish Airlines, crashes into a forest just outside Warsaw, killing all 183 people on board. The USS Stark is hit by two Iraqi-owned Exocet AM39 air-to-surface missiles killing 37 sailors. ?]
+
+[? if year = 1987 and month = 6: During a visit to Berlin, Germany, U.S. President Ronald Reagan challenges Soviet general secretary Mikhail Gorbachev to tear down the Berlin Wall. Margaret Thatcher is re-elected for a third term. ?]
+
+[? if year = 1987 and month = 7: The Single European Act is passed by the European Community. ?]
+
+[? if year = 1987 and month = 8: Rudolf Hess is found dead in his cell in Spandau Prison. Hess, 93, is believed to have committed suicide by hanging himself with an electrical flex. ?]
+
+[? if year = 1987 and month = 9: Chadian–Libyan War: Chad and Libya sign a ceasefire under supervision of the Organisation of African Unity, officially ending the 14-year territorial conflict. Erich Honecker makes a visit to Bonn, marking the first visit by an East German head of state to West Germany. The United States and Poland agree to exchange ambassadors after a four-year break in relations. ?]
+
+[? if year = 1987 and month = 10: Stock market levels fall sharply on Wall Street and around the world, earning the namesake *Black Monday*. ?]
+
+[? if year = 1987 and month = 11: U.S. Senate and House panels release reports charging President Ronald Reagan with 'ultimate responsibility' for the Iran-Contra affair. Korean Air Flight 858 is blown up over the Andaman Sea, killing 115 crew and passengers. ?]
+
+[? if year = 1987 and month = 12: The First Intifada begins in the Gaza Strip and West Bank. Pope John Paul II issues the encyclical *Sollicitudo rei socialis* (On Social Concern). ?]
+
+[? if year = 1988 and month = 1: Erich Honecker visits France, the first such visit by an East German head of state. Bulgarian leader Todor Zhivkov signals support for moderate reforms; non-Communist (though not anti-Communist) organizations are legalized for the first time. ?]
+
+[? if year = 1988 and month = 2: A Nazi document implicates former United Nations Secretary-General and Austrian President Kurt Waldheim in World War II deportations. ?]
+
+[? if year = 1988 and month = 3: TThe first McDonald's restaurant in a country run by a Communist party opens in Belgrade, Yugoslavia. The Candle demonstration in Bratislava, Slovakia, is the first mass demonstration of the 1980s against the socialist government in Czechoslovakia. ?]
+
+[? if year = 1988 and month = 4: The United States Navy retaliates for the USS Samuel B. Roberts mining with Operation Praying Mantis, in a day of strikes against Iranian oil platforms and naval vessels. ?]
+
+[? if year = 1988 and month = 5: François Mitterrand is re-elected as President of France for 7 years. ?]
+
+[? if year = 1988 and month = 6: NASA scientist James Hansen testifies to the U.S. Senate that human-made global warming has begun, becoming one of the first environmentalists to warn of the problem. ?]
+
+[? if year = 1988 and month = 7: The ruling Communist Party of Albania criticizes Gorbachev's Soviet reforms. Iran agrees to United Nations Security Council Resolution 598 negotiating a ceasefire. ?]
+
+[? if year = 1988 and month = 8: A meeting of Islamic Jihadi leaders, including Osama bin Laden, takes place, leading to the founding of Al-Qaeda. A ceasefire effectively ends the Iran–Iraq War, with an estimated one million lives lost. ?]
+
+[? if year = 1988 and month = 9: South African troops withdraw from Angola. ?]
+
+[? if year = 1988 and month = 10: Chilean dictator Augusto Pinochet loses a national plebiscite on his rule; he relinquishes power in 1990.  ?]
+
+[? if year = 1988 and month = 11: The United States Vice-president and Republican nominee George H. W. Bush defeats the Democratic nominee and Governor of Massachusetts, Michael Dukakis, in the 1988 United States Presidential Election. ?]
+
+[? if year = 1988 and month = 12: In the Armenian SSR, a 6.8 Spitak earthquake kills nearly 25,000, injures 31,000 and leaves 400,000 homeless. ?]
+
+[? if year = 1989 and month = 1: Two Libyan MiG-23 "Floggers" are engaged and shot down by two US Navy F-14 Tomcats. Thirty-five European nations, meeting in Vienna, agree to strengthen human rights and improve East–West trade. ?]
+
+[? if year = 1989 and month = 2: The Government of the People's Republic of Poland holds formal talks with representatives of Solidarity movement for the first time since 1981.  ?]
+
+[? if year = 1989 and month = 3: In the Armenian SSR, a 6.8 Spitak earthquake kills nearly 25,000, injures 31,000 and leaves 400,000 homeless. ?]
+
+[? if year = 1989 and month = 4: In the Armenian SSR, a 6.8 Spitak earthquake kills nearly 25,000, injures 31,000 and leaves 400,000 homeless. ?]
+
+[? if year = 1989 and month = 5: In the Armenian SSR, a 6.8 Spitak earthquake kills nearly 25,000, injures 31,000 and leaves 400,000 homeless. ?]
+
 - @party
 - @govt
 - #advisor
