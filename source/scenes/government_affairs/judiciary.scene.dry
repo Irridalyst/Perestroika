@@ -1,37 +1,50 @@
-title: Judiciary Reform
+title: Women in the Economy
 new-page: true
 is-card: true
-view-if: spd_in_government = 1 and justice_minister_party = "SPD" and judiciary_timer = 0
-on-arrival: month_actions += 1; judiciary_timer += 6
-card-image: img/portraits/RadbruchGustav.jpg
 tags: govt_affairs, cabinet
+view-if: spd_in_government = 1 and womens_economy_timer = 0
+on-arrival: womens_economy_timer += 10; month_actions += 1
+card-image: img/portraits/womensrights.jpg
+frequency: 50
+max-visits: 1
 
-= Judiciary Reform
+= Women in the Economy
 
-The Judiciary is one of the most reactionary components of the government, along with the military. Many jurists have held office since the days of the Emperor. They give violent fascists like Adolf Hitler laughably light sentences, while ruthlessly persecuting leftists and pacifists for lesser crimes.
+Since the 1950s, Soviet women have been praised as the ideal “worker-mothers”, pillars of both industrial production and family life. In practice, this meant carrying a triple burden: full-time work, domestic labor, and childcare, often without sufficient state support. Though gender equality is enshrined in law, the lived experience has remained starkly unequal.
 
-[? if judicial_reform <= 0 : There is great demand in our membership for reforming the judiciary, although this may bring us into a collision course with our coalition allies. ?]
-[? if judicial_reform == 1 : We have started on the path to judicial reform. While some of the most antideluvian and biased justices have been replaced, many still remain. More should be done. ?]
-[? if judicial_reform >= 2 : We have successfully reformed the judiciary, to some extent. At the very least, the courts will not actively obstruct our attempts to prosecute crimes committed by the far-right. ?]
+Today, with the population aging and birthrates falling, this contradiction is becoming unsustainable. Women are increasingly vocal: demanding real support, not slogans. Some call for expanded social services, others for a cultural shift in how labor—paid and unpaid—is valued.
 
-- @reform: Carry out substantial judicial reforms,
-- @minor_reforms: Carry out minor judicial reforms.
-- @as_is: Leave the judiciary as it is.
+- @triple_burden: Launch a public campaign and workplace initiative.
+- @universal_childcare: Establish a national childcare system.
+- @parental_leave_reform: Expand and equalize parental leave.
+- @welfare: Increase welfare for single mothers and children.
+- @return: Do not enact any policies for now.
 - @easy_discard
 - @cancel_advisor_action
 
-@reform
+@triple_burden
+on-arrival: economic_growth += 0.1; womens_work += 1; 
+max-visits: 3
+
+The “Triple Burden” remains an invisible weight for many women. Workplace responsibilities, domestic labor, and caregiving all take lots of time and energy. A public-private initiative will encourage employers to recognize this dynamic and implement gender-equitable solutions.
+
+@universal_childcare
+subtitle: Budget -1
+choose-if: budget > 0
+on-arrival: resouces += 2; childcare += 1; birthrate += 1; universal_childcare += 1; budget -= 1
+max-visits: 1
+
+We propose a comprehensive, state-funded childcare system, ensuring access for all working families. By lifting a key barrier to women’s participation in the workforce, this reform addresses both labor shortages and birthrate anxieties.
+
+@parental_leave_reform
+on-arrival: womens_rights += 1; womens_work += 1; unemployed -= 0.1; family_law += 1
+max-visits: 3
+
+We will reform parental leave laws to offer generous, paid leave available equally to all genders. Shared caregiving helps reduce the burden on women and makes parenting more sustainable in a changing society.
+
+@welfare
 subtitle: -1 budget
-unavailable-subtitle: Not enough budget.
-choose-if: budget >= 1
-on-arrival: budget -= 1; democratization += 2; coalition_dissent += 1 if in_grand_coalition == 1; workers_spd += 5*(1-dissent) if democratization >= 3; judicial_reform += 2; pro_republic += 5*(1-dissent); coup_progress += 1; coalition_dissent += 1 if historical_mode
+choose-if: budget > 0
+on-arrival: welfare += 1; budget -= 1; womens_work += 1; unemployed -= 0.4; economic_growth += 0.3; inflation += 0.1
 
-We investigate jurists who have shown themselves to have biased or corrupt behavior, and try to remove them, replacing them with more democratically-oriented jurists. This obviously raises quite a great deal of ire in conservative circles, including within our coalition. 
-
-@minor_reforms
-on-arrival: democratization += 1; workers_spd += 3*(1-dissent) if democratization >= 3; judicial_reform += 1; pro_republic += 3*(1-dissent); judiciary_timer += 6
-
-We try to remove the most obviously biased and corrupt jurists, while leaving most of the system intact. It is slow work reforming the judiciary.
-
-@as_is
-go-to: root
+We have increased welfare spending on women and children. [? if welfare >= 1 and unemployed >= 15 : Some members of the Politburo are questioning our decision at the moment. ?]
