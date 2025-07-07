@@ -1,0 +1,40 @@
+title: The Resignation of Mikhail Gorbachev
+subtitle: December 25, 1991 at 7:35 p.m. Moscow time
+new-page: true
+view-if: year = 1991 and month = 12 and president = "Gorbachev"
+on-arrival: itsgorbover = 1
+max-visits: 1
+priority: 1
+tags: event
+face-image: img/itsgorbover.jpg
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/russiantricolor.jpeg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+
+= The Resignation of Mikhail Gorbachev
+
+President Mikhail Gorbachev has resigned. The red flag has been lowered from the Kremlin, and with it, seventy years of Soviet history come to an end.
+
+What began as a bid to revitalize the Union—through Perestroika, Glasnost, and a “new thinking” in foreign policy—unraveled under the weight of contradictions. Economic stagnation, ethnic unrest, and growing demands for sovereignty shattered the unity of the state. The failed August coup, meant to save the USSR, only hastened its end.
+
+Gorbachev departs not as a conqueror nor as a martyr, but as a man overtaken by the currents he tried to master. In the streets of Moscow, people cheer—and others mourn.
+
+The Union is no more. What comes next is unknown.
+
+- @goodbye: The Supreme Soviet convenes the next day...
+
+@goodbye
+
+With Gorbachev’s resignation now public and irreversible, attention turns to the legal dissolution of the Soviet state.
+
+Though much of the Union had already functionally ceased to exist, with republics declaring independence, ministries standing idle, and power shifting to Moscow, the legal architecture of the USSR still lingers. The Council of Republics of the Supreme Soviet, a little-known upper chamber created in 1990, now takes center stage.
+  
+- @itsgorbover2
