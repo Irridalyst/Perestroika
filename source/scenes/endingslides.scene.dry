@@ -18,6 +18,7 @@ A chapter in history closes.
 title: The Russian Republic Rises
 subtitle: Ending 1
 view-if: itsgorbover = 1
+new-page: true
 
 Many international observers viewed the collapse of the Soviet Union as the start of a new wave of peace. What followed was not peace, but a vacuum. 
 
