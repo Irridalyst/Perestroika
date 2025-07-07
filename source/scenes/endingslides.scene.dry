@@ -1,0 +1,69 @@
+title: Ending Slides
+view-if: (chancellor != "Hitler" and president != "Hitler" and president != "Göring" and (not total_defeat or papen_win)) or rubicon_mini
+on-arrival: {!
+const toolsWrapper = document.getElementById('tools_wrapper');
+if (toolsWrapper) {
+  toolsWrapper.style.display = 'none';
+}
+const elements = document.querySelectorAll('header, #content, footer');
+elements.forEach(el => {
+  el.style.maxWidth = '800px';
+});
+new-page: true
+
+A chapter in history closes.
+
+- @historical
+
+@historical
+title: The Russian Republic Rises
+subtitle: Ending 1
+view-if: itsgorbover = 1
+
+Many international observers viewed the collapse of the Soviet Union as the start of a new wave of peace. What followed was not peace, but a vacuum. 
+
+The 1990s were a time of hardship. Russia, inheritor of the Soviet seat at the UN, NATO’s wary neighbor, and nuclear superpower in name alone, fell into social and economic ruin. Millions slid into poverty. The Communist Party collapsed in prestige. Oligarchs rose from the ashes of privatization, while organized crime infiltrated every level of society. In Chechnya, the Russian Federation launched brutal campaigns to reassert control, revealing how fragile the new state was. Yeltsin's dream of a truly democratic Russia never bore fruit.
+
+Then came a man named *Vladimir Putin*. He rose to power promising order, strength, and restoration. For many Russians, weary from a decade of humiliation, it was enough. Under his rule, the state was rebuilt—less democratic, more centralized, and increasingly nostalgic for the Soviet past. The symbols changed, but the logic remained: a strong Russia, encircled by enemies, must stand firm.
+
+The former Soviet republics charted divergent paths. The Baltic states joined NATO and the European Union. Georgia and Ukraine turned westward, but not without cost. Others, like Belarus, maintained their eastern alignment.
+  
+In 2014, Russia annexed Crimea from Ukraine following a period of political instability and the ousting of President Viktor Yanukovych. However, it was not enough to secure Putin's ambitions. The so-called “Russian World” became a justification for revanchism.
+
+On February 24th, 2022, the Russian Federation launches a special military operation in Ukraine to "denazify, demilitarize, and protect ethnic Russians in the Donbass". The war has left thousands dead and turned millions into refugees.
+
+By 2024, the world is not yet at peace. The Cold War is long over but its ghosts remain. The fall of the Soviet Union ended an era, but the story it left behind is unfinished.
+  
+- @go_back
+- @go_back_2
+
+@go_back
+title: Go back.
+on-arrival: {!
+const toolsWrapper = document.getElementById('tools_wrapper');
+if (toolsWrapper) {
+  toolsWrapper.style.display = 'block';
+}
+const elements = document.querySelectorAll('header, #content, footer');
+elements.forEach(el => {
+  el.style.maxWidth = '540px';
+});
+!}
+set-bg: img/map_2.jpg
+go-to: game_over.eg_menu
+
+@go_back_2
+title: Go back.
+view-if: not (pro_republic < 50 and spd_votes < 25 and z_ideology == "Right" and z_relation < 35 and dnvp_ideology == "Radical")
+on-arrival: {!
+const toolsWrapper = document.getElementById('tools_wrapper');
+if (toolsWrapper) {
+  toolsWrapper.style.display = 'block';
+}
+const elements = document.querySelectorAll('header, #content, footer');
+elements.forEach(el => {
+  el.style.maxWidth = '540px';
+});
+!}
+set-bg: img/map_2.jpg
+go-to: game_over.eg_menu
