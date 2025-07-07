@@ -1,0 +1,29 @@
+title: The Ratification of the Belavezha Accords
+subtitle: 69 years of Communist rule comes to an end...
+new-page: true
+view-if: itsgorbover = 1
+max-visits: 1
+tags: event
+go-to: game_over_1934
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/ultimatelygorbover.jpg";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
+
+= The Ratification of the Belavezha Accords
+
+The Supreme Soviet has voted to ratify the Belavezha Accords, officially recognizing the dissolution of the Union of Soviet Socialist Republics.
+
+The agreement, signed earlier by the leaders of Russia, Ukraine, and Belarus, replaces the USSR with a new entity—the *Commonwealth of Independent States*. With this act, the Soviet constitution is rendered void, and the institutions that governed nearly a sixth of the Earth vanish into history.
+
+The hammer and sickle has fallen, and the Russian tricolor now flies above the Kremlin.
+
+What was once unthinkable is now law. The Soviet Union no longer exists.
