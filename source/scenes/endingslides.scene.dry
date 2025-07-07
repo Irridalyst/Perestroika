@@ -12,10 +12,10 @@ new-page: true
 
 A chapter in history closes.
 
-- @historical
+- @putin
 
-@historical
-title: The Russian Republic Rises
+@putin
+title: A False Victory
 subtitle: Ending 1
 view-if: itsgorbover = 1
 new-page: true
