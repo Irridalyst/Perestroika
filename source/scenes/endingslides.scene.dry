@@ -35,26 +35,9 @@ On February 24th, 2022, the Russian Federation launches a special military opera
 By 2024, the world is not yet at peace. The Cold War is long over but its ghosts remain. The fall of the Soviet Union ended an era, but the story it left behind is unfinished.
   
 - @go_back
-- @go_back_2
 
 @go_back
 title: Go back.
-on-arrival: {!
-const toolsWrapper = document.getElementById('tools_wrapper');
-if (toolsWrapper) {
-  toolsWrapper.style.display = 'block';
-}
-const elements = document.querySelectorAll('header, #content, footer');
-elements.forEach(el => {
-  el.style.maxWidth = '540px';
-});
-!}
-set-bg: img/map_2.jpg
-go-to: game_over.eg_menu
-
-@go_back_2
-title: Go back.
-view-if: not (pro_republic < 50 and spd_votes < 25 and z_ideology == "Right" and z_relation < 35 and dnvp_ideology == "Radical")
 on-arrival: {!
 const toolsWrapper = document.getElementById('tools_wrapper');
 if (toolsWrapper) {
