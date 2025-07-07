@@ -1,4 +1,5 @@
 title: Ending Slides
+new-page: true
 on-arrival: {!
 const toolsWrapper = document.getElementById('tools_wrapper');
 if (toolsWrapper) {
@@ -8,7 +9,7 @@ const elements = document.querySelectorAll('header, #content, footer');
 elements.forEach(el => {
   el.style.maxWidth = '800px';
 });
-new-page: true
+!}
 
 A chapter in history closes.
 
