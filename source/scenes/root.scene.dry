@@ -324,6 +324,7 @@ Q.economic_records = [];
 Q.president = "Gorbachev";
 // starting chancellor: Nikolai Ryzhkov
 Q.chancellor = "Ryzhkov";
+Q.rsfsr_president = "Vorotnikov";
 Q.spd_in_government = 1;
 Q.z_in_government = 0;
 Q.ddp_in_government = 0;
