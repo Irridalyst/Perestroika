@@ -1,0 +1,15 @@
+title: A Quiet Departure at the Lubyanka
+view-if: year == 1988 and month >= 10
+subtitle: Leadership Change at the KGB
+frequency: 1000
+max-visits: 1
+on-arrival: chebrikov_dead = 1; n_advisors -= 1 if chebrikov_advisor == 1; chebrikov_advisor = 0; interior_police_loyalty -= 0.1
+tags: event
+new-page: true
+face-image: img/chebrikov.jpg
+
+= A Quiet Departure at the Lubyanka
+
+Viktor Chebrikov, Chairman of the KGB since 1982, has been dismissed from his post. A holdover from the Andropov era, Chebrikov was known for his firm resistance to glasnost and his unwavering commitment to surveillance and internal control. While not publicly criticized, his departure signals a shift in the internal balance of power.
+
+In his place, Vladimir Kryuchkov has been appointed—nominally a loyal Gorbachev ally, though his true loyalties remain unclear. Reformers in the Politburo hail this as a necessary step in reining in the power of the security services. Hardliners, meanwhile, grumble that a vital pillar of state stability has just been removed.
