@@ -14,6 +14,7 @@ elements.forEach(el => {
 A chapter in history closes.
 
 - @putin
+- @wholesome
 
 @putin
 title: New Face, Same Czar
@@ -35,6 +36,51 @@ On February 24th, 2022, the Russian Federation launched a special military opera
 
 By 2024, the world is not yet at peace. The Cold War is long over but its ghosts remain. The fall of the Soviet Union ended an era, but the story it left behind is unfinished.
   
+- @go_back
+
+@wholesome
+title: The Union Lives on
+subtitle: Ending 2
+view-if: ussr_saved = 1
+new-page: true
+
+Despite mounting internal and external pressure, the Soviet Union has somehow endured. During [+ president +]'s term as General Secretary, Gorbachev's reforms of glasnost and perestroika were finally fully implemented, bringing the Soviet Union into a new era of prosperity.
+
+Detractors could only watch on as the Soviet Union's economy grew at rapid levels to once more rival that of the United States. Its vast quantities of natural resources, combined with targeted market reforms under perestroika, provided the Soviet Union with the fuel to re-industrialize and modernize. Special economic zones opened in the Baltics, the Caucasus, and along the Pacific coast, attracting investment from both domestic capitalists and cautious Western firms eager to break into a vast new market. Technocrats—not party ideologues—were entrusted to manage this transformation.
+
+Yet the Communist Party remained firmly in control. Glasnost brought greater openness in media and civic life, but only within bounds acceptable to the state. Elections were expanded but remained carefully stage-managed. Opposition existed—but only within the officially sanctioned limits. Those who pushed too far, especially nationalists in the republics or liberal agitators in the cities, found themselves quietly removed, harassed, or exiled.
+
+Foreign policy, too, changed in tone but not in ambition. The Warsaw Pact was dissolved, but the Soviet sphere of influence never truly disappeared. New economic and security arrangements—the Eurasian Cooperation Forum, the Commonwealth Trade Union, and the Collective Security Treaty Organization—ensured Moscow’s continued relevance in the post-Cold War world. Relations with China grew warmer as both pursued parallel development paths: capitalist economies under one-party states.
+
+- @wholesome_a
+- @wholesome_b
+
+@wholesome_a
+title: Subending 1 – A New Age of Communism
+view-if: (ussr_saved and return_to_normalcy and pro_republic > 80)
+
+By the 2000s, the Union of Soviet Sovereign Republics—as it had rebranded itself—had become an uneasy blend of state capitalism and managed pluralism. Western observers debated whether it was truly “post-communist.” For its citizens, the distinction often mattered less than the fact that life was, for many, better than it had been before.
+
+By 2024, the world no longer speaks of a Cold War. Instead, it watches a multi-polar world shaped not by the fall of empires, but by their evolution. The Soviet Union remains a dominant player—rich, stable, and authoritarian. Its cities are modern, its internet is filtered, and its elections are predictable. It is not the Soviet Union of 1984—but neither is it a liberal democracy. It is something new, and perhaps uniquely durable.
+
+The revolution survived—not by remaining pure, but by learning to bend.
+
+- @go_back
+
+@wholesome_b
+title: Subending 2 – Two Steps Forward, Three Steps Back
+view-if: (not return_to_normalcy) or (pro_republic < 50)
+
+But the high of the 1990s could not last forever. As the new millennium began, the contradictions of the Soviet system reemerged. The early gains of perestroika began to stall by the late 1990s, as endemic corruption, inefficient state monopolies, and growing income inequality eroded the economic progress made during the reform era. A wave of stagflation in the early 2000s—sparked by global commodity shifts and internal mismanagement—sent shockwaves through the Soviet middle class. Investment dried up, key industries stagnated, and youth unemployment surged across the republics.
+
+Public discontent followed. Riots in Tashkent, mass strikes in Ukraine, and a student movement in Leningrad exposed the fragility beneath the polished surface. Though the Party initially attempted to respond with technocratic reshuffles and populist rhetoric, these proved insufficient. The reformist elite—once seen as the architects of a new Soviet modernity—were increasingly blamed for the crisis, accused of selling out socialism in favor of “bourgeois capitalism.”
+
+The backlash was swift. By 2004, a new generation of party leadership—more conservative, less cosmopolitan—began rolling back the limited pluralism of the glasnost era. The state reclaimed more control over the media, NGO regulations tightened, and high-profile dissidents were once again imprisoned or driven abroad. Foreign firms operating in the SEZs were hit with sudden audits, back taxes, or forced nationalizations, further isolating the Soviet economy.
+
+Today, the Soviet Union remains—but diminished. Still nominally a global power, it is a shadow of its late 20th-century promise. Citizens enjoy fewer rights than a generation ago, while regional elites enrich themselves under the pretense of national unity. The internet is tightly controlled, elections are rituals of loyalty, and the younger generation either dreams of emigration or resigns itself to stagnation.
+
+It is not the old Soviet Union—but it is not a reformed one either. It is a nation adrift, its future uncertain, its past both a burden and a memory too painful to forget.
+
 - @go_back
 
 @go_back
