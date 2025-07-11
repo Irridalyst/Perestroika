@@ -1,5 +1,8 @@
 title: 19th All-Union Conference of the Communist Party of the Soviet Union
 subtitle: The nation stands at a crossroads...
+max-visits: 1
+tags: event
+on-arrival: 19th_seen = 1
 view-if: month = 6 and year = 1988
 face-image: img/19thcongress.jpg
 
