@@ -467,17 +467,17 @@ tags: left_advisor
 
 Kurt Rosenfeld is now an advisor.
 
-@add_seydewitz
-title: Max Seydewitz
-subtitle: Max Seydewitz is a former leader of the youth wing, current supporter of the left wing of the SPD, and advocates for class struggle. {!<br><br>!}[? if difficulty < 0 : Actions - Rally for Class Struggle, Socialist Youth, Against Toleration ?]
+@add_yazov
+title: Dmitry Yazov
+subtitle: Dmitry Yazov has been a longtime servant of the Soviet Armed Forces, now in command of the Far East Military District. [? if yazov_promoted = 1 : He has recently been promoted to the Minister of Defense. ?]
 is-card: true
-card-image: img/portraits/SeydewitzMax.jpg
-view-if: seydewitz_advisor = 0 and n_advisors < 3 and left_split = 0
-on-arrival: seydewitz_advisor = 1; n_advisors += 1; left_strength += 5
+card-image: img/portraits/Yazov.jpg
+view-if: yazov_advisor = 0 and n_advisors < 3 and left_split = 0
+on-arrival: yazov_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-Max Seydewitz is now an advisor.
+Dmitry Yazov is now an advisor.
 
 @add_siemsen
 title: Anna Siemsen
