@@ -177,14 +177,14 @@ go-to: rm_main
 
 Rosenfeld has been removed as an advisor. The Leftist faction disapproves.
 
-@remove_seydewitz
-title: Remove Seydewitz
-view-if: seydewitz_advisor = 1
+@remove_yazov
+title: Remove Yazov
+view-if: yazov_advisor = 1
 tags: remove_advisor
-on-arrival: seydewitz_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: yazov_advisor = 0; left_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Seydewitz has been removed as an advisor. The Leftist faction disapproves.
+Yazov has been removed as an advisor. The Hardliners disapproves.
 
 @remove_siemsen
 title: Remove Siemsen
