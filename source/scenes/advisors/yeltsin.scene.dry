@@ -1,7 +1,7 @@
 title: Boris Yeltsin
 is-pinned-card: true
 tags: advisor, reformist
-card-image: img/portraits/YeltsinBoris.jpg
+card-image: img/portraits/YeltsinBoris.jpeg
 view-if: yeltsin_advisor = 1
 new-page: true 
 
