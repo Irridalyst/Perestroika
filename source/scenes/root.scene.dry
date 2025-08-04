@@ -535,7 +535,7 @@ Q.sender_advisor = 0; // Toni Sender
 Q.chebrikov_advisor = 1; // Viktor Chebrikov
 Q.levi_dead = 0;
 Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
-Q.seydewitz_advisor = 0; // Max Seydewitz
+Q.yazov_advisor = 0; // Dmitry Yazov
 
 // centrist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Pfülf
