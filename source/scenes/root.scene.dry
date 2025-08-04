@@ -543,7 +543,7 @@ Q.hilferding_advisor = 0; // Rudolf Hilferding
 
 // Reformist advisors
 Q.severing_advisor = 0; // Carl Severing
-Q.braun_advisor = 0; // Otto Braun
+Q.yeltsin_advisor = 0; // Boris Yeltsin
 Q.juchacz_advisor = 0; // Marie Juchacz
 Q.baade_advisor = 0; // Fritz Baade
 
