@@ -395,10 +395,10 @@ Carl Severing is now an advisor.
 title: Boris Yeltsin
 subtitle: Yeltsin is the leader of the reformist faction within the party. [? if yeltsin_rsfsr = 1 : He is also the President of the RSFSR ?] {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Negotiating with the Coalition ?]
 is-card: true
-card-image: img/portraits/BraunOtto.jpg
+card-image: img/portraits/YeltsinBoris.jpeg
 tags: reformist_advisor
-view-if: braun_advisor = 0 and n_advisors < 3
-on-arrival: braun_advisor = 1; n_advisors += 1; reformist_strength += 5
+view-if: yeltsin_advisor = 0 and n_advisors < 3
+on-arrival: yeltsin_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
 
 Boris Yeltsin is now an advisor.
