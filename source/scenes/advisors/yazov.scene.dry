@@ -1,0 +1,29 @@
+title: Dmitry Yazov
+is-pinned-card: true
+tags: advisor, left
+card-image: img/portraits/Yazov.jpeg
+view-if: yazov_advisor = 1
+new-page: true 
+
+= Max Seydewitz
+
+Dmitry Yazov has been a longtime servant of the Soviet Armed Forces, now in Command of the Far East Military District. [? if yazov_promoted = 1 : He has recently been promoted to the Minister of Defense ?]
+- @military_affairs
+- @hardliner_influence
+- @root: Return to main
+
+@military_affairs
+title: Military affairs
+subtitle: We can set our military policy.
+choose-if: advisor_action_timer == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not in government. ?][? if reichswehr_minister_party != "SPD": The SPD does not have the Reichswehr ministry. ?]
+on-arrival: advisor_action_timer = 6; last_advisor_action = 1
+go-to: military_policy
+
+@hardliner_influence
+title: Increase the Hardliner's Influence
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; left_strength += 6; left_dissent -= 8; reformist_dissent += 2
+
+We have increased the strength of the left faction with the SPD.
