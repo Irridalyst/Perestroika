@@ -5,9 +5,10 @@ card-image: img/portraits/Yazov.jpeg
 view-if: yazov_advisor = 1
 new-page: true 
 
-= Max Seydewitz
+= Dmitry Yazov
 
-Dmitry Yazov has been a longtime servant of the Soviet Armed Forces, now in Command of the Far East Military District. [? if yazov_promoted = 1 : He has recently been promoted to the Minister of Defense ?]
+Dmitry Yazov has been a longtime servant of the Soviet Armed Forces, now in command of the Far East Military District. [? if yazov_promoted = 1 : He has recently been promoted to the Minister of Defense. ?]
+
 - @military_affairs
 - @hardliner_influence
 - @root: Return to main
