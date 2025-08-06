@@ -328,41 +328,17 @@ view-if: n_advisors < 3
 
 - #nonfactional_advisor
 
-@add_hilferding
-title: Rudolf Hilferding
-subtitle: Rudolf Hilferding is an economist and one of our chief Marxist theoreticians. {!<br><br>!}[? if difficulty < 0 : Actions - Against Right and Left, Defending Toleration, Fiscal Policy, Economic Democracy ?]
+@add_gorbachev
+title: Add Gorbachev
+subtitle: Gorbachev is the General Secretary of the CPSU.
 is-card: true
-card-image: img/portraits/HilferdingRudolf.jpg
+view-if: gorbachev_advisor = 0
+card-image: img/portraits/GorbachevMikhail.jpg
 tags: center_advisor
-view-if: hilferding_advisor = 0 and n_advisors < 3 and centrists_resign = 0
-on-arrival: hilferding_advisor = 1; n_advisors += 1
-go-to: advisor_menu
+on-arrival: gorbachev_advisor = 1; n_advisors += 1
+go-to: rm_main
 
-Rudolf Hilferding is now an advisor.
-
-@add_wels
-title: Otto Wels
-subtitle: Otto Wels is a long-time party organizer and member of the leadership, serving under Friedrich Ebert. {!<br><br>!}[? if difficulty < 0 : Actions -  Clear the Agenda, Party Discipline, Emergency Fundraising ?]
-is-card: true
-card-image: img/portraits/WelsRudolf.jpg
-tags: center_advisor
-view-if: wels_advisor = 0 and n_advisors < 3 and centrists_resign = 0
-on-arrival: wels_advisor = 1; n_advisors += 1
-go-to: advisor_menu
-
-Otto Wels is now an advisor.
-
-@add_muller
-title: Hermann Müller
-subtitle: Hermann Müller is the last Social Democratic Chancellor. {!<br><br>!}[? if difficulty < 0 : Actions - Negotiating with the Coalition, Defending Toleration ?]
-is-card: true
-card-image: img/portraits/MüllerHermann.jpg
-tags: center_advisor
-view-if: muller_advisor = 0 and muller_dead = 0 and n_advisors < 3 and centrists_resign = 0
-on-arrival: muller_advisor = 1; n_advisors += 1
-go-to: advisor_menu
-
-Hermann Müller is now an advisor.
+Gorbachev has been removed as an advisor. The Centrist faction disapproves.
 
 @add_Shevardnadze
 title: Eduard Shevardnadze
@@ -431,17 +407,17 @@ Antonie Pfülf is now an advisor.
 
 # left
 
-@add_levi
-title: Paul Levi
-subtitle: Paul Levi is a former KPD leader who was purged for criticizing Communist policies. {!<br><br>!}[? if difficulty < 0 : Actions - Building the Left, Cooperation with the KPD ?]
+@add_chebrikov
+title: Viktor Chebrikov
+subtitle: Chebrikov is a veteran KGB official and a staunch conservative.
 is-card: true
-card-image: img/portraits/LeviPaul.jpg
-view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and left_split = 0
-on-arrival: levi_advisor = 1; n_advisors += 1; left_strength += 5
+card-image: img/portraits/ChebrikovViktor.jpg
+view-if: levi_advisor = 0 and chebrikov_sacked = 0 and n_advisors < 3 and left_split = 0
+on-arrival: chebrikov_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
 
-Paul Levi is now an advisor.
+Viktor Chebrikov is now an advisor.
 
 @add_sender
 title: Toni Sender
