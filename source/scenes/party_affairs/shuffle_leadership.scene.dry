@@ -423,7 +423,7 @@ Viktor Chebrikov is now an advisor.
 title: Yegor Ligachev
 subtitle: Yegor Ligachev serves as the principal voice of the conservative wing of the CPSU.
 card-image: img/portraits/LigachevYegor.jpg
-view-if: sender_advisor = 0 and n_advisors < 3
+view-if: ligachev_advisor = 0 and n_advisors < 3
 on-arrival: ligachev_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
