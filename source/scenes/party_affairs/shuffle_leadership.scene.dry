@@ -111,14 +111,14 @@ Pfülf has been removed as an advisor. The Reformist faction disapproves.
 
 # labor
 
-@remove_leipart
-title: Remove Leipart
-view-if: leipart_advisor = 1
+@remove_yavlinsky
+title: Remove Yavlinsky
+view-if: yavlinsky_advisor = 1
 tags: remove_advisor
-on-arrival: leipart_advisor = 0; labor_dissent += 5; n_advisors -= 1
+on-arrival: yavlinsky_advisor = 0; labor_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Leipart has been removed as an advisor. The Labor faction disapproves.
+Yavlinsky has been removed as an advisor. The Labor faction disapproves.
 
 @remove_aufhauser
 title: Remove Aufhäuser
@@ -146,7 +146,7 @@ tags: remove_advisor
 on-arrival: woytinsky_advisor = 0; labor_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Woytinsky has been removed as an advisor. The Labor faction disapproves.
+Woytinsky has been removed as an advisor. The Technocratic faction disapproves.
 
 # left
 
@@ -470,17 +470,17 @@ Anna Siemsen is now an advisor.
 
 # labor
 
-@add_leipart
-title: Theodor Leipart
-subtitle: Theodor Leipart is the leader of the ADGB, the German Trade Union Federation. {!<br><br>!}[? if difficulty < 0 : Actions - Organizing Workers, Addressing the Economic Crisis ?]
+@add_yavlinsky
+title: Grigory Yavlinsky
+subtitle: Grigory Yavlinsky is one of our chief economists and market reformers.
 is-card: true
-card-image: img/portraits/LeipartTheodor.jpg
+card-image: img/portraits/YavlinskyGrigory.jpg
 tags: labor_advisor
-view-if: leipart_advisor = 0 and n_advisors < 3 and unions_independent = 0
-on-arrival: leipart_advisor = 1; n_advisors += 1; labor_strength += 5
+view-if: yavlinsky_advisor = 0 and n_advisors < 3 and unions_independent = 0
+on-arrival: yavlinsky_advisor = 1; n_advisors += 1; labor_strength += 5
 go-to: advisor_menu
 
-Theodor Leipart is now an advisor.
+Grigory Yavlinsky is now an advisor.
 
 @add_aufhauser
 title: Siegfried Aufhäuser
