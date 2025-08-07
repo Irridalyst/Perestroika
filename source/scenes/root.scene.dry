@@ -533,7 +533,7 @@ Q.shevardnadze_advisor = 1; // Eduard Shevardnadze
 // left advisors
 Q.sender_advisor = 0; // Toni Sender
 Q.chebrikov_advisor = 1; // Viktor Chebrikov
-Q.levi_dead = 0;
+Q.chebrikov_dead = 0;
 Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
 Q.yazov_advisor = 0; // Dmitry Yazov
 
@@ -546,11 +546,11 @@ Q.severing_advisor = 0; // Carl Severing
 Q.yeltsin_advisor = 0; // Boris Yeltsin
 Q.juchacz_advisor = 0; // Marie Juchacz
 Q.baade_advisor = 0; // Fritz Baade
+Q.yavlinsky_advisor = 0; // Grigory Yavlinsky
 
 // Labor advisors
 Q.leipart_advisor = 0; // Theodor Leipart
 Q.aufhauser_advisor = 0; // Siegfried Aufhäuser
-Q.woytinsky_advisor = 0; // Wladimir Woytinsky (post-1930)
 Q.wissell_advisor = 0; // Rudolf Wissell
 
 // Revisionist advisors
