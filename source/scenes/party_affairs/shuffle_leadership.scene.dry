@@ -99,26 +99,17 @@ go-to: rm_main
 
 Juchacz has been removed as an advisor. The Reformist faction disapproves.
 
-@remove_pfulf
-title: Remove Pfülf
-view-if: pfulf_advisor = 1
-tags: remove_advisor
-on-arrival: pfulf_advisor = 0; reformist_dissent += 5; n_advisors -= 1
-go-to: rm_main
-
-Pfülf has been removed as an advisor. The Reformist faction disapproves.
-
-
-# labor
-
 @remove_yavlinsky
 title: Remove Yavlinsky
 view-if: yavlinsky_advisor = 1
 tags: remove_advisor
-on-arrival: yavlinsky_advisor = 0; labor_dissent += 5; n_advisors -= 1
+on-arrival: yavlinsky_advisor = 0; reformist_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Yavlinsky has been removed as an advisor. The Technocratic faction disapproves.
+Yavlinsky has been removed as an advisor. The Reformist faction disapproves.
+
+
+# labor
 
 @remove_aufhauser
 title: Remove Aufhäuser
@@ -391,17 +382,17 @@ tags: reformist_advisor
 
 Marie Juchacz is now an advisor.
 
-@add_pfulf
-title: Antonie Pfülf
-subtitle: Antonie Pfülf is a leader in social policy and women's rights. {!<br><br>!}[? if difficulty < 0 : Actions - Support a People's Party, Women's Rights ?]
+@add_yavlinsky
+title: Grigory Yavlinsky
+subtitle: Grigory Yavlinsky is one of our chief economists and market reformers.
 is-card: true
-card-image: img/portraits/PfülfAntonie.jpg
-view-if: pfulf_advisor = 0 and n_advisors < 3
-on-arrival: pfulf_advisor = 1; n_advisors += 1
+card-image: img/portraits/YavlinskyGrigory.jpg
+tags: labor_advisor
+view-if: yavlinsky_advisor = 0 and n_advisors < 3
+on-arrival: yavlinsky_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
-tags: reformist_advisor
 
-Antonie Pfülf is now an advisor.
+Grigory Yavlinsky is now an advisor.
 
 
 
@@ -469,18 +460,6 @@ Anna Siemsen is now an advisor.
 
 
 # labor
-
-@add_yavlinsky
-title: Grigory Yavlinsky
-subtitle: Grigory Yavlinsky is one of our chief economists and market reformers.
-is-card: true
-card-image: img/portraits/YavlinskyGrigory.jpg
-tags: labor_advisor
-view-if: yavlinsky_advisor = 0 and n_advisors < 3 and unions_independent = 0
-on-arrival: yavlinsky_advisor = 1; n_advisors += 1; labor_strength += 5
-go-to: advisor_menu
-
-Grigory Yavlinsky is now an advisor.
 
 @add_aufhauser
 title: Siegfried Aufhäuser
