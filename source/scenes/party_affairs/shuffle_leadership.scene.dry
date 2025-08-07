@@ -387,7 +387,7 @@ title: Grigory Yavlinsky
 subtitle: Grigory Yavlinsky is one of our chief economists and market reformers.
 is-card: true
 card-image: img/portraits/YavlinskyGrigory.jpg
-tags: labor_advisor
+tags: reformist_advisor
 view-if: yavlinsky_advisor = 0 and n_advisors < 3
 on-arrival: yavlinsky_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
