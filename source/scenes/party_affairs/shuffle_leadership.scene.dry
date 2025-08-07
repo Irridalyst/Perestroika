@@ -139,14 +139,14 @@ go-to: rm_main
 Abalkin has been removed as an advisor. The Technocratic faction disapproves.
 
 
-@remove_woytinsky
-title: Remove Woytinsky
-view-if: woytinsky_advisor = 1
+@remove_ryzhkov
+title: Remove Ryzhkov
+view-if: ryzhkov_advisor = 1
 tags: remove_advisor
-on-arrival: woytinsky_advisor = 0; labor_dissent += 3; n_advisors -= 1
+on-arrival: ryzhkov_advisor = 0; labor_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Woytinsky has been removed as an advisor. The Technocratic faction disapproves.
+Ryzhkov has been removed as an advisor. The Technocratic faction disapproves.
 
 # left
 
@@ -507,17 +507,17 @@ go-to: advisor_menu
 Leonid Abalkin is now an advisor.
 
 
-@add_woytinsky
-title: Wladimir Woytinsky
-subtitle: Wladimir Woytinsky is a former Russian Menshevik who is now the lead trade union economist. {!<br><br>!}[? if difficulty < 0 : Actions - Addressing the Economic Crisis, Carrying Out the Economic Plan ?]
+@add_ryzhkov
+title: Nikolai Ryzhkov
+subtitle: Nikolai Ryzhkov is the current Chairman of the Council of Ministers and a technocrat. {!<br><br>!}[? if difficulty < 0 : Actions - Addressing the Economic Crisis, Carrying Out the Economic Plan ?]
 is-card: true
-card-image: img/portraits/WoytinskyWladimir.jpg
+card-image: img/portraits/RyzhkovNikolai.png
 tags: labor_advisor
-view-if: woytinsky_advisor = 0 and n_advisors < 3 and unions_independent = 0
-on-arrival: woytinsky_advisor = 1; n_advisors += 1; labor_strength += 3
+view-if: ryzhkov_advisor = 0 and n_advisors < 3 and unions_independent = 0
+on-arrival: ryzhkov_advisor = 1; n_advisors += 1; labor_strength += 3
 go-to: advisor_menu
 
-Wladimir Woytinsky is now an advisor.
+Nikolai Ryzhkov is now an advisor.
 
 
 # neorevisionist leaders
