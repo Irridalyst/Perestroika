@@ -118,7 +118,7 @@ tags: remove_advisor
 on-arrival: yavlinsky_advisor = 0; labor_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Yavlinsky has been removed as an advisor. The Labor faction disapproves.
+Yavlinsky has been removed as an advisor. The Technocratic faction disapproves.
 
 @remove_aufhauser
 title: Remove Aufhäuser
@@ -127,16 +127,16 @@ tags: remove_advisor
 on-arrival: aufhauser_advisor = 0; labor_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Aufhäuser has been removed as an advisor. The Labor faction disapproves.
+Aufhäuser has been removed as an advisor. The Technocratic faction disapproves.
 
-@remove_wissell
-title: Remove Wissell
-view-if: wissell_advisor = 1
+@remove_abalkin
+title: Remove Abalkin
+view-if: abalkin_advisor = 1
 tags: remove_advisor
-on-arrival: wissell_advisor = 0; labor_dissent += 3; n_advisors -= 1
+on-arrival: abalkin_advisor = 0; labor_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Wissell has been removed as an advisor. The Labor faction disapproves.
+Abalkin has been removed as an advisor. The Technocratic faction disapproves.
 
 
 @remove_woytinsky
@@ -494,17 +494,17 @@ go-to: advisor_menu
 
 Siegfried Aufhäuser is now an advisor.
 
-@add_wissell
-title: Rudolf Wissell
-subtitle: Rudolf Wissell is an economist who has been the Labor Minister, and is an advocate for the interests of labor within the government. {!<br><br>!}[? if difficulty < 0 : Actions - Union-Party Coordination, Labor Rights ?]
+@add_abalkin
+title: Leonid Abalkin
+subtitle: Abalkin is the director of the Institute of Economics of the USSR Academy of Sciences and one of the nation's prominent economists.
 is-card: true
-card-image: img/portraits/WissellRudolf.jpg
+card-image: img/portraits/AbalkinLeonid.jpg
 tags: labor_advisor
-view-if: wissell_advisor = 0 and n_advisors < 3 and unions_independent = 0
-on-arrival: wissell_advisor = 1; n_advisors += 1; labor_strength += 3
+view-if: abalkin_advisor = 0 and n_advisors < 3 and unions_independent = 0
+on-arrival: abalkin_advisor = 1; n_advisors += 1; labor_strength += 3
 go-to: advisor_menu
 
-Rudolf Wissell is now an advisor.
+Leonid Abalkin is now an advisor.
 
 
 @add_woytinsky
