@@ -2,7 +2,7 @@ title: 1988 United States Elections
 view-if: year = 1988 and month = 11
 new-page: true
 tags: event
-on-arrival: dnc_majority_house = 1
+on-arrival: dnc_majority_house = 1;
 set-jump: new_elections
 on-display: {!  
     var cardEl = document.createElement('div');  
@@ -27,18 +27,19 @@ The United States elections are to be held now...
 @new_elections
 on-display: {!
 data = [
-    data.push({
-        "id": "dem",
-        "legend": "Democrats",
-        "name": "Democrats",
-        "seats": 258,
-    });
-    data.push({
-        "id": "gop",
-        "legend": "Republicans",
-        "name": "Republicans",
-        "seats": 177,
-    });
+        {
+            id: "dem",
+            legend: "Democrats",
+            name: "Democrats",
+            seats: 258
+        },
+        {
+            id: "gop",
+            legend: "Republicans",
+            name: "Republicans",
+            seats: 177
+    },
+]);
 if (window && d3) {
     var width = 500; 
     var height = 500;
