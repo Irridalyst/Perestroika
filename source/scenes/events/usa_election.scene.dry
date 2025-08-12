@@ -2,7 +2,7 @@ title: 1988 United States Elections
 view-if: year = 1988 and month = 11
 new-page: true
 tags: event
-on-arrival: usa_elections_seen = 1; dnc_majority_house = 1
+on-arrival: dnc_majority_house = 1;
 set-jump: new_elections
 on-display: {!  
     var cardEl = document.createElement('div');  
@@ -71,8 +71,9 @@ testing testing
 - @dnc_majority_casa
 
 @gop_majority_casa
-title: The <span style="color: #E81B23;">**Republican**</span> Party wins a majority?
-subtitle: The <span style="color: #E81B23;">**Republican**</span> Party somehow scores a resounding victory.
+title: The <span style="color: #E81B23;">**Republican**</span> Party wins a majority.
+subtitle: The <span style="color: #E81B23;">**Republican**</span> Party will control the House.
+unavailable-subtitle: The <span style="color: #E81B23;">**Republican**</span> Party does not have a majority.
 choose-if: gop_majority_house = 1
 on-arrival: hacker = 1
 go-to: election_menu
@@ -81,7 +82,7 @@ Okay man, no need to cheat.
 
 @dnc_majority_casa
 title: The incumbent <span style="color: #00AEF3;">**Democratic**</span> Party has maintained its majority.
-subtitle: The <span style="color: #00AEF3;">**Democrats**</span> will control the Senate[? if dnc_house_majority = 0 : .] [? if dnc_house_majority = 1 : and the House of Representatives. ?]
+subtitle: The <span style="color: #00AEF3;">**Democrats**</span> will control the House.
 view-if: dnc_majority_house = 1
 on-arrival: dnc_house = 1
 go-to: election_menu
