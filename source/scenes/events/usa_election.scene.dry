@@ -78,7 +78,6 @@ testing testing
 title: The Republic Party wins a majority.
 choose-if: gop_majority_house = 1
 on-arrival: hacker = 1
-go-to: election_menu
 
 Okay man, no need to cheat.
 
@@ -86,6 +85,5 @@ Okay man, no need to cheat.
 title: The incumbent Democratic Party has maintained its majority.
 view-if: dnc_majority_house = 1
 on-arrival: dnc_house = 1
-go-to: election_menu
 
 Despite the victory of a <span style="color: #E81B23;">**Republican**</span> president, the <span style="color: #00AEF3;">**Democratic**</span> Party has maintained and expanded its majority within the House. This will make it difficult for President George W. Bush and incumbent President Ronald Reagan to pass bills.
