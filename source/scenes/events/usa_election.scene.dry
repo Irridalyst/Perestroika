@@ -23,6 +23,8 @@ max-visits: 1
 The United States elections are to be held now...
 
 - @new_elections: We await the results...
+
+@new_elections
 data = [
     data.push({
         "id": "dem",
@@ -83,7 +85,6 @@ go-to: @coalition_menu_1
 {!</table>!}
 
 @coalition_menu_1
-
 - @gop_majority_casa
 - @dnc_majority_casa
 
