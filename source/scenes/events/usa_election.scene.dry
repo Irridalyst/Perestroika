@@ -72,7 +72,6 @@ testing testing
 
 @gop_majority_casa
 title: The <span style="color: #E81B23;">**Republican**</span> Party wins a majority.
-unavailable-subtitle: The <span style="color: #E81B23;">**Republican**</span> Party does not have a majority.
 choose-if: gop_majority_house = 1
 on-arrival: hacker = 1
 go-to: election_menu
