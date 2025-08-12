@@ -72,7 +72,6 @@ testing testing
 
 @gop_majority_casa
 title: The <span style="color: #E81B23;">**Republican**</span> Party wins a majority.
-subtitle: The <span style="color: #E81B23;">**Republican**</span> Party will control the House.
 unavailable-subtitle: The <span style="color: #E81B23;">**Republican**</span> Party does not have a majority.
 choose-if: gop_majority_house = 1
 on-arrival: hacker = 1
@@ -82,7 +81,6 @@ Okay man, no need to cheat.
 
 @dnc_majority_casa
 title: The incumbent <span style="color: #00AEF3;">**Democratic**</span> Party has maintained its majority.
-subtitle: The <span style="color: #00AEF3;">**Democrats**</span> will control the House.
 view-if: dnc_majority_house = 1
 on-arrival: dnc_house = 1
 go-to: election_menu
