@@ -2,7 +2,7 @@ title: 1988 United States Elections
 view-if: year = 1988 and month = 11
 new-page: true
 tags: event
-on-arrival: usa_elections_seen = 1; dnc_majority_house = 1
+on-arrival: dnc_majority_house = 1
 set-jump: new_elections
 on-display: {!  
     var cardEl = document.createElement('div');  
