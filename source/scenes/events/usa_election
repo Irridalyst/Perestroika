@@ -1,0 +1,106 @@
+title: 1988 United States Elections
+view-if: year == 1988 and month == 11
+new-page: true
+tags: event
+on-arrival: usa_elections_seen = 1; dnc_majority_house = 1
+set-jump: new_elections
+on-display: {!  
+    var cardEl = document.createElement('div');  
+    cardEl.className = "face-figure2";  
+
+    var image = new Image();  
+    image.className = "face-img";  
+    image.src = "img/states.png";  
+
+    cardEl.appendChild(image);  
+    var contentDiv = document.querySelector("#page #mid_panel #content");
+    contentDiv.appendChild(cardEl);
+!}
+max-visits: 1
+
+= Local Elections, [+ month : month +] [+ year +]
+
+The United States elections are to be held now...
+
+- @new_elections: We await the results...
+data = [
+    data.push({
+        "id": "dem",
+        "legend": "Democrats",
+        "name": "Democrats",
+        "seats": 258,
+    });
+    data.push({
+        "id": "gop",
+        "legend": "Republicans",
+        "name": "Republicans",
+        "seats": 177,
+    });
+if (window && d3) {
+    var width = 500; 
+    var height = 500;
+    var screenWidth = document.getElementById('content').offsetWidth;
+    if (screenWidth < width - 50) {
+        width = screenWidth - 50; 
+        height = width;
+        document.getElementById("reichstag").style.height = screenWidth/2 + "px";
+    } 
+
+    var parliament = d3.parliament();
+    parliament.width(width).height(height).innerRadiusCoef(0.4);
+    parliament.enter.fromCenter(true).smallToBig(true);
+    parliament.exit.toCenter(false).bigToSmall(true);
+    d3.select("#reichstag").datum(data).call(parliament);
+}
+!}
+go-to: @coalition_menu_1
+
+= Election results
+
+{!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
+
+{!<table>!} 
+{!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td></tr>!}
+
+[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
+
+{!<tr><td><div class="box" style='background-color:#8B0000'> </div> !}KPD: {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#DCCA4A'> </div> !} [+ ddp_name +]: {!</td><td>!} [+ ddp_r +]% {!</td><td>!} [+ str_change_ddp +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#000'> </div> !} Z: {!</td><td>!} [+ z_minus_bvp_r +]% {!</td><td>!} [+ str_change_z +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#69A2BE'> </div> !} BVP: {!</td><td>!} 3% {!</td><td>!} 0 {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#D5AC27'> </div> !} DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +] {!</td></tr>!}
+ 
+{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#3f7bc1'> </div> !} DNVP: {!</td><td>!} [+ dnvp_r +]% {!</td><td>!} [+ str_change_dnvp +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#954B00'> </div> !} NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td><td>!} [+ str_change_nsdap +] {!</td></tr>!}
+{!</table>!}
+
+@coalition_menu_1
+
+- @gop_majority_casa
+- @dnc_majority_casa
+
+@gop_majority_casa
+title: The <span style="color: #E81B23;">**Republican**</span> Party wins a majority?
+subtitle: The <span style="color: #E81B23;">**Republican**</span> Party somehow scores a resounding victory.
+choose-if: gop_majority_house = 1
+on-arrival: hacker = 1
+go-to: election_menu
+
+Okay man, no need to cheat.
+
+@dnc_majority_casa
+title: The incumbent <span style="color: #00AEF3;">**Democratic**</span> Party has maintained its majority.
+subtitle: The <span style="color: #00AEF3;">**Democrats**</span> will control the Senate[? if dnc_house_majority = 0 : .] [? if dnc_house_majority = 1 : and the House of Representatives. ?]
+view-if: dnc_majority_house = 1
+on-arrival: dnc_house = 1
+go-to: election_menu
+
+Despite the victory of a <span style="color: #E81B23;">**Republican**</span> president, the <span style="color: #00AEF3;">**Democratic**</span> Party has maintained and expanded its majority within the House. This will make it difficult for President George W. Bush and incumbent President Ronald Reagan to pass bills.
