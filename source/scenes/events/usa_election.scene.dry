@@ -39,6 +39,7 @@ data = [
             name: "Republicans",
             seats: 177
     },
+data = data.concat([
 ]);
 if (window && d3) {
     var width = 500; 
