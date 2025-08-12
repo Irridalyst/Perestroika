@@ -72,10 +72,10 @@ testing testing
 {!</table>!}
 
 @coalition_menu_1
-- @gop_majority_casa
-- @dnc_majority_casa
+- @gop_majority_house
+- @dnc_majority_house
 
-@gop_majority_casa
+@gop_majority_house
 title: The <span style="color: #E81B23;">**Republican**</span> Party wins a majority.
 choose-if: gop_majority_house = 1
 on-arrival: hacker = 1
@@ -83,7 +83,7 @@ go-to: election_menu
 
 Okay man, no need to cheat.
 
-@dnc_majority_casa
+@dnc_majority_house
 title: The incumbent <span style="color: #00AEF3;">**Democratic**</span> Party has maintained its majority.
 view-if: dnc_majority_house = 1
 on-arrival: dnc_house = 1
