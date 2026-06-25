@@ -189,6 +189,24 @@
       $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
   };
 
+  // Populates the right-hand "news"/leadership sidebar.
+  // Expects a scene with id "news" in your .dry source whose content
+  // holds whatever flavor text/leader info you want shown there.
+  // Update that scene's content via @set actions as the game state changes.
+  window.updateNewsSidebar = function() {
+      $('#news').empty();
+      var scene = dendryUI.game.scenes[window.newsTab || 'news'];
+      if (!scene) {
+          // No "news" scene defined yet in the source - nothing to show.
+          return;
+      }
+      if (scene.onArrival) {
+          dendryUI.dendryEngine._runActions(scene.onArrival);
+      }
+      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+      $('#news').append(dendryUI.contentToHTML.convert(displayContent));
+  };
+
   window.changeTab = function(newTab, tabId) {
       if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
           window.alert('Polls are not available in historical mode.');
@@ -206,6 +224,7 @@
 
   window.onDisplayContent = function() {
       window.updateSidebar();
+      window.updateNewsSidebar();
   };
 
   /*
@@ -242,6 +261,7 @@
 
   window.justLoaded = true;
   window.statusTab = "status";
+  window.newsTab = "news";
   window.dendryModifyUI = main;
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
 

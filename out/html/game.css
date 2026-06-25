@@ -219,6 +219,30 @@ blockquote + blockquote.attribution {
   font-weight: normal;
 }
 
+/* news sidebar (right-hand "newspaper" column) */
+#news {
+  text-indent: 0;
+  line-height: 1.3em;
+  font-size: 0.95em;
+}
+#news p {
+  text-indent: 1em;
+}
+#news h1 {
+  font-family: "Old English Text MT", "Blackletter", Georgia, serif;
+  font-size: 1.2em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.75em 0;
+  text-shadow: rgba(255, 255, 255, 0.75) 2px 2px 2px,
+               rgba(0, 0, 0, 0.1) -1px -1px 2px;
+}
+#news strong {
+  color: var(--link-color);
+}
+
 
 /* tabs */
 .tab_container {
@@ -405,6 +429,39 @@ a.card:focus .card-tooltip, a.card:hover .card-tooltip {
   /*max-width: 150px;*/
   vertical-align: bottom;
   object-fit: cover;
+}
+
+/* Leader/party-head portrait card, shown above the Decks section */
+.leader-card {
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: var(--content-bg-color);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  clear: both;
+}
+.leader-card .leader-title {
+  font-size: 1.3em;
+  margin: 0 0 0.75em 0;
+  font-weight: normal;
+}
+.leader-card .leader-title strong {
+  color: var(--link-color);
+}
+.leader-card img.leader-img {
+  display: block;
+  margin: 0 auto 0.5em auto;
+  max-width: 150px;
+  border: 5px solid var(--card-border-color);
+}
+.leader-card .leader-name {
+  font-weight: bold;
+  margin: 0;
+}
+.leader-card .leader-role {
+  color: var(--unavailable-color);
+  font-style: italic;
+  margin: 0;
 }
 
 /*
