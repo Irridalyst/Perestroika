@@ -262,6 +262,14 @@ blockquote + blockquote.attribution {
   color: var(--link-color);
 }
 
+.news-masthead {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 0.75em auto;
+  height: auto;
+}
+
 
 /* tabs */
 .tab_container {
