@@ -1,6 +1,6 @@
 #Front page of the Party newspaper.
 
-<img class="news-masthead" src="img/pravda_masthead.png">
+<img class="news-masthead" image.src="img/Pravda_Logo.png">
 
     [? if year = 1987 and month = 2: The Soviet oil tanker *Antonio Gramsci* suffers a minor shipwreck in Finnish waters en route to the Neste oil refinery in Porvoo, resulting in an oil spill of approximately 570–650 tons. The Tower Commission rebukes U.S. President Ronald Reagan for not controlling his National Security Council staff. ?]
 
