@@ -14,8 +14,8 @@ max-cards: 3
 
 <div class="leader-card">
 <h2 class="leader-party">Communist Party of the Soviet Union (<span class="leader-abbr">CPSU</span>)</h2>
-<img class="leader-portrait" src="img/gorbachev.jpg">
-<div class="leader-name">Mikhail Gorbachev</div>
+<img class="leader-portrait" src="img/chernenko.jpg">
+<div class="leader-name">Konstantin Chernenko</div>
 <div class="leader-role">General Secretary</div>
 </div>
 
