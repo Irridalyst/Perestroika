@@ -270,6 +270,14 @@ blockquote + blockquote.attribution {
   height: auto;
 }
 
+.news-emblem {
+  display: block;
+  width: 40px;
+  max-width: 40px;
+  height: auto;
+  margin: 1em auto 0 auto;
+}
+
 
 /* tabs */
 .tab_container {
