@@ -613,8 +613,3 @@ new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1987
-
-It is a hopeful time for Soviet socialism. After years of stagnation, our reforms of Perestroika and Glasnost are revitalizing the economy and energizing society, paving the way toward genuine socialist renewal. On the international front, dialogue with the West has advanced, promising a historic reduction of tensions and meaningful arms agreements.
-
-Now, the urgent task for the Communist Party is to deepen our restructuring efforts, strengthen socialist democracy, and inspire the Soviet people to embrace this transformative moment. Under the leadership of Comrade Gorbachev, we stand at the threshold of a brighter socialist future.
-
