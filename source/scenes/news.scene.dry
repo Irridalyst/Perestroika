@@ -2,15 +2,17 @@
 
     <img class="news-masthead" src="img/Pravda_Logo.png">
 
-    [? if year = 1987 and month = 1: It is a hopeful time for Soviet socialism. After years of stagnation, our reforms of Perestroika and Glasnost are revitalizing the economy and energizing society, paving the way toward genuine socialist renewal.</p><p>On the international front, dialogue with the West has advanced, promising a historic reduction of tensions and meaningful arms agreements. Now, the urgent task for the Communist Party is to deepen our restructuring efforts, strengthen socialist democracy, and inspire the Soviet people to embrace this transformative moment. Under the leadership of Comrade Gorbachev, we stand at the threshold of a brighter socialist future. ?]
+    [? if year = 1985 and month = 1: The future of the <span style="color: #cc0000;">Soviet</span> <span style="color: #ffd700;">Union</span> is deeply troubling. The lengthy war in <span style="color: #000000;">Afg</span><span style="color: #d41a09;">hani</span><span style="color: #027b32;">stan</span> alongside growing resistance to economic modernization have caused the economy to stagnate. Furthermore, General Secretary Konstantin Chernenko's health is drastically spiraling after years of battling an aggressive form of pneumonia. The aging General Secretary is barely conscious, with most decrees being delivered from his hospital bed.</p><p>The party is increasingly divided on who to elect as the next General Secretary. Those within the <span style="color: #8b0000a1;">**Hardliners**</span> argue for continuation of the philosophy of Brezhnev and the preservation of the orthodox <span style="color: #FF0000;">Marxist-Leninist</span> system. However, many within the <span style="color: #2E5C8A;">Conservative</span> faction and the growing <span style="color: #3F9142;">Reformist</span> faction argue for a younger leader.]
 
-    [? if year = 1987 and month = 2: The Soviet oil tanker *Antonio Gramsci* suffers a minor shipwreck in Finnish waters en route to the Neste oil refinery in Porvoo, resulting in an oil spill of approximately 570–650 tons.</p><p>The Tower Commission rebukes U.S. President Ronald Reagan for not controlling his National Security Council staff. ?]
+    [? if year = 1987 and month = 1: It is a hopeful time for <span style="color: #cc0000;">Soviet</span> socialism. After years of stagnation, our reforms of Perestroika and Glasnost are revitalizing the economy and energizing society, paving the way toward genuine socialist renewal.</p><p>On the international front, dialogue with the West has advanced, promising a historic reduction of tensions and meaningful arms agreements. Now, the urgent task for the Communist Party is to deepen our restructuring efforts, strengthen socialist democracy, and inspire the <span style="color: #cc0000;">Soviet</span> people to embrace this transformative moment. Under the leadership of Comrade Gorbachev, we stand at the threshold of a brighter socialist future. ?]
 
-    [? if year = 1987 and month = 3: U.S. President Ronald Reagan addresses the American people on the Iran–Contra affair, acknowledging that his overtures to Iran had "deteriorated" into an arms-for-hostages deal.</p><p>Margaret Thatcher, Prime Minister of the United Kingdom, conducts a 45-minute interview on Soviet television. ?]
+    [? if year = 1987 and month = 2: The <span style="color: #cc0000;">Soviet</span> oil tanker *Antonio Gramsci* suffers a minor shipwreck in Finnish waters en route to the Neste oil refinery in Porvoo, resulting in an oil spill of approximately 570–650 tons.</p><p>The Tower Commission rebukes U.S. President Ronald Reagan for not controlling his National Security Council staff. ?]
+
+    [? if year = 1987 and month = 3: U.S. President Ronald Reagan addresses the American people on the Iran–Contra affair, acknowledging that his overtures to Iran had "deteriorated" into an arms-for-hostages deal.</p><p>Margaret Thatcher, Prime Minister of the United Kingdom, conducts a 45-minute interview on <span style="color: #cc0000;">Soviet</span> television. ?]
 
     [? if year = 1987 and month = 4: The governments of the Portuguese Republic and the People's Republic of China sign an agreement in which Macau will be returned to China in 1999. ?]
 
-    [? if year = 1987 and month = 5: A Soviet-made Ilyushin Il-62 airliner, operated by LOT Polish Airlines, crashes into a forest just outside Warsaw, killing all 183 people on board.</p><p>The USS Stark is hit by two Iraqi-owned Exocet AM39 air-to-surface missiles killing 37 sailors. ?]
+    [? if year = 1987 and month = 5: A <span style="color: #cc0000;">Soviet</span>-made Ilyushin Il-62 airliner, operated by LOT Polish Airlines, crashes into a forest just outside Warsaw, killing all 183 people on board.</p><p>The USS Stark is hit by two Iraqi-owned Exocet AM39 air-to-surface missiles killing 37 sailors. ?]
 
     [? if year = 1987 and month = 6: Margaret Thatcher is re-elected for a third term. ?]
 
@@ -38,7 +40,7 @@
 
     [? if year = 1988 and month = 6: NASA scientist James Hansen testifies to the U.S. Senate that human-made global warming has begun, becoming one of the first environmentalists to warn of the problem. ?]
 
-    [? if year = 1988 and month = 7: The ruling Communist Party of Albania criticizes Gorbachev's Soviet reforms.</p><p>Iran agrees to United Nations Security Council Resolution 598 negotiating a ceasefire. ?]
+    [? if year = 1988 and month = 7: The ruling Communist Party of Albania criticizes Gorbachev's <span style="color: #cc0000;">Soviet</span> reforms.</p><p>Iran agrees to United Nations Security Council Resolution 598 negotiating a ceasefire. ?]
 
     [? if year = 1988 and month = 8: A meeting of Islamic Jihadi leaders, including Osama bin Laden, takes place, leading to the founding of Al-Qaeda.</p><p>A ceasefire effectively ends the Iran–Iraq War, with an estimated one million lives lost. ?]
 
