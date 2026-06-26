@@ -3,6 +3,7 @@
 <img class="news-masthead" src="img/Pravda_Logo.png">
 
     [? if year = 1987 and month = 1: It is a hopeful time for Soviet socialism. After years of stagnation, our reforms of Perestroika and Glasnost are revitalizing the economy and energizing society, paving the way toward genuine socialist renewal.</p><p>On the international front, dialogue with the West has advanced, promising a historic reduction of tensions and meaningful arms agreements. Now, the urgent task for the Communist Party is to deepen our restructuring efforts, strengthen socialist democracy, and inspire the Soviet people to embrace this transformative moment. Under the leadership of Comrade Gorbachev, we stand at the threshold of a brighter socialist future. ?]
+
     [? if year = 1987 and month = 2: The Soviet oil tanker *Antonio Gramsci* suffers a minor shipwreck in Finnish waters en route to the Neste oil refinery in Porvoo, resulting in an oil spill of approximately 570–650 tons. The Tower Commission rebukes U.S. President Ronald Reagan for not controlling his National Security Council staff. ?]
 
     [? if year = 1987 and month = 3: U.S. President Ronald Reagan addresses the American people on the Iran–Contra affair, acknowledging that his overtures to Iran had "deteriorated" into an arms-for-hostages deal. Margaret Thatcher, Prime Minister of the United Kingdom, conducts a 45-minute interview on Soviet television. ?]
