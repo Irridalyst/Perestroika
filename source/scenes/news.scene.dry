@@ -60,4 +60,4 @@
 
     [? if year = 1989 and month = 5: In the Armenian SSR, a 6.8 Spitak earthquake kills nearly 25,000, injures 31,000 and leaves 400,000 homeless. ?]
 
-    <img class="news-emblem" src="img/red_star.png">
+    <img class="news-emblem" src="img/Red_star.png">
