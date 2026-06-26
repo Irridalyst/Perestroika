@@ -51,6 +51,7 @@ In practice, <span style="color: #8b0000a1;">**Chernenko**</span>'s brief tenure
 @gorby
 title: The Politburo convenes...
 on-arrival: chernenko_dead = 1; gorbachev_gs = 1; general_secretary_name = "Mikhail Gorbachev"; general_secretary_role = "General Secretary"; general_secretary_img = "img/portraits/GorbachevMikhail.jpg";
-face-image: img/portraits/GorbachevMikhail.jpg
+
+<div class="face-figure-right"><img class="face-img" src="img/portraits/GorbachevMikhail.jpg"></div>
 
 <span style="color: #2E5C8A;">**Mikhail Gorbachev**</span> has been elected as the next General Secretary of the <span style="color: #cc0000;">Soviet</span> <span style="color: #ffd700;">Union</span>! Despite believing that his nomination to the post would come with opposition, Foreign Minister and longtime Politburo member Andrei Gromyko's <span class="tooltip-wrap">recommendation<span class="tooltip-tip">*"I will speak frankly. When you think about a candidate for the position of General Secretary of the CPSU, of course, you think about Mikhail Sergeevich Gorbachev. In my view, that would be an absolutely correct choice."*</span></span> carried great weight. Gorbachev was unanimously elected as the next General Secretary, becoming one of the youngest members to hold the post. His election is seen as a breath of fresh air throughout the entire party.
