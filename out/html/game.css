@@ -259,7 +259,7 @@ blockquote + blockquote.attribution {
   color: var(--text-color);
 }
 #news strong {
-  color: var(--link-color);
+  color: inherit;
 }
 
 .news-masthead {
@@ -489,7 +489,9 @@ a.card:focus .card-tooltip, a.card:hover .card-tooltip {
 .leader-card .leader-portrait {
   display: block;
   margin: 0 auto 0.5em auto;
-  max-width: 150px;
+  width: 170px;
+  height: 210px;
+  object-fit: cover;
   border: 5px solid var(--card-border-color);
 }
 .leader-card .leader-name {
