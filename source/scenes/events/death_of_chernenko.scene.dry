@@ -41,9 +41,9 @@ In practice, Chernenko's brief tenure had seen him share power with Defense Mini
 
 <table>
 <tr><th>Faction</th><th>Delegates</th></tr>
-<tr><td class="legend-swatch hardliner"></td><td>Hardliner: 38%</td></tr>
-<tr><td class="legend-swatch conservative"></td><td>Conservative: 35%</td></tr>
-<tr><td class="legend-swatch technocrat"></td><td>Technocrat: 17%</td></tr>
-<tr><td class="legend-swatch reformist"></td><td>Reformist: 5%</td></tr>
-<tr><td class="legend-swatch nationalist"></td><td>Nationalist: 5%</td></tr>
+<tr><td class="legend-swatch hardliner"></td><td class="legend-label hardliner">Hardliner: 38%</td></tr>
+<tr><td class="legend-swatch conservative"></td><td class="legend-label conservative">Conservative: 35%</td></tr>
+<tr><td class="legend-swatch technocrat"></td><td class="legend-label technocrat">Technocrat: 17%</td></tr>
+<tr><td class="legend-swatch reformist"></td><td class="legend-label reformist">Reformist: 5%</td></tr>
+<tr><td class="legend-swatch nationalist"></td><td class="legend-label nationalist">Nationalist: 5%</td></tr>
 </table>
