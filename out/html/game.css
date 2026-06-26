@@ -632,7 +632,7 @@ table {
 
 /* Styles for parties */
 .seat.hardliner {
-    fill: #8b0000a1;
+    fill: #8b0000;
 }
 .seat.conservative {
     fill: #18426c;
@@ -652,7 +652,7 @@ table {
   height: 1em;
   display: inline-block;
 }
-.legend-swatch.hardliner { background-color: #8b0000a1; }
+.legend-swatch.hardliner { background-color: #8b0000; }
 .legend-swatch.conservative { background-color: #2E5C8A; }
 .legend-swatch.technocrat { background-color: #909090; }
 .legend-swatch.reformist { background-color: #3F9142; }
