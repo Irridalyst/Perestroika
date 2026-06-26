@@ -564,7 +564,8 @@ img {
       margin-left: 0.4em;
   }
   #mid_panel {
-      margin-right: 0.4em;
+      margin-left: 15rem;
+      margin-right: 15rem;
   }
 }
 /* mobile: move the stat box to the top if the screen is too small,
