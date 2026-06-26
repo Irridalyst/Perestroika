@@ -230,24 +230,3 @@ Religion: [? if religion_policy = 0 : Suppressed ?][? if religion_policy = 1 : T
 NGOs and Civil Groups: [? if ngos_exist = 0 : Nonexistent ?][? if ngos_exist = 1 : Marginal ?][? if ngos_exist >= 2 : Active ?]
 
 Corruption: [? if corruption = 0 : Minimal ?][? if corruption = 1 : Common ?][? if corruption = 2 : Endemic ?]
-
-@radio
-
-= Радио Маяк
-
-{! <center><img src="img/redarmychoir.jpg"></center> !}
-{!
-  <audio controls loop>
-    <source src="music/1987_1989/WideIsMyMotherland.mp3" type="audio/mpeg">
-  </audio>
-!}
-
-= Радио Кино
-
-{! <center><img src="img/Kino.png"></center> !}
-{!
-  <audio controls loop>
-    <source src="music/1990_1992/KinoLeto.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-!}

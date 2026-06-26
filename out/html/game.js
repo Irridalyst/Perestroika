@@ -258,7 +258,62 @@
       return bar;
   };
 
+// --- Boombox music player ---
+window._musicPlaylist = [
+    { name: "Wide is my Motherland", src: "music/1987_1989/WideIsMyMotherland.mp3" },
+    { name: "WDTMB", src: "music/1987_1989/WDTMB.mp3" },
+    { name: "The Internationale", src: "music/1987_1989/TheInternationale.mp3" }
+];
+window._musicIndex = 0;
+window._musicAudio = new Audio();
+window._musicPlaying = false;
 
+window._musicLoadTrack = function(index) {
+    var track = window._musicPlaylist[index];
+    window._musicAudio.src = track.src;
+    var nameEl = document.getElementById('boombox-track-name');
+    if (nameEl) { nameEl.textContent = track.name; }
+};
+
+window._musicPlay = function() {
+    if (!window._musicAudio.src) {
+        window._musicLoadTrack(window._musicIndex);
+    }
+    if (window._musicPlaying) {
+        window._musicAudio.pause();
+        window._musicPlaying = false;
+    } else {
+        window._musicAudio.play();
+        window._musicPlaying = true;
+    }
+    window._musicUpdateUI();
+};
+
+window._musicNext = function() {
+    window._musicIndex = (window._musicIndex + 1) % window._musicPlaylist.length;
+    window._musicLoadTrack(window._musicIndex);
+    if (window._musicPlaying) { window._musicAudio.play(); }
+    window._musicUpdateUI();
+};
+
+window._musicPrev = function() {
+    window._musicIndex = (window._musicIndex - 1 + window._musicPlaylist.length) % window._musicPlaylist.length;
+    window._musicLoadTrack(window._musicIndex);
+    if (window._musicPlaying) { window._musicAudio.play(); }
+    window._musicUpdateUI();
+};
+
+window._musicUpdateUI = function() {
+    var playBtn = document.getElementById('boombox-play');
+    var boombox = document.getElementById('boombox');
+    if (playBtn) { playBtn.textContent = window._musicPlaying ? '⏸' : '▶'; }
+    if (boombox) { boombox.classList.toggle('playing', window._musicPlaying); }
+};
+
+// auto-advance to next track when one ends (cycles the playlist automatically)
+window._musicAudio.addEventListener('ended', function() {
+    window._musicNext();
+});
   window.justLoaded = true;
   window.statusTab = "status";
   window.newsTab = "news";
