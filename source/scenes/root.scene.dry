@@ -2,6 +2,7 @@ title: Root Scene
 new-page: true
 go-to: post_event if started = 1; start_menu if started = 0
 
+
 @start_menu
 new-page: true
 go-to: start_menu_2
@@ -24,6 +25,9 @@ Q.year = 1985;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
+Q.general_secretary_name = "Konstantin Chernenko";
+Q.general_secretary_role = "General Secretary";
+Q.general_secretary_img = "img/chernenko.jpg";
 
 // 0 = normal difficulty, 1 = hard mode, 2 = hard mode no saves
 Q.difficulty = 0;

@@ -42,9 +42,9 @@ max-cards: 4
 
 <div class="leader-card">
 <h2 class="leader-party">Communist Party of the Soviet Union (<span class="leader-abbr">CPSU</span>)</h2>
-<img class="leader-portrait" src="img/chernenko.jpg">
-<div class="leader-name">Konstantin Chernenko</div>
-<div class="leader-role">General Secretary</div>
+<img class="leader-portrait" src="[+ general_secretary_img +]">
+<div class="leader-name">[+ general_secretary_name +]</div>
+<div class="leader-role">[+ general_secretary_role +]</div>
 </div>
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
