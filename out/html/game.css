@@ -484,7 +484,7 @@ a.card:focus .card-tooltip, a.card:hover .card-tooltip {
 }
 .leader-card .leader-abbr {
   font-weight: bold;
-  color: #3F7BC1;
+  color: #D40000;
 }
 .leader-card .leader-portrait {
   display: block;
