@@ -645,28 +645,16 @@ table {
     fill: #6B4226;
 }
 
-#content table td, #content table th {
-  padding: 0.3em 0.5em;
-  text-align: left;
-  vertical-align: middle;
-}
 .legend-swatch {
   width: 1em;
   height: 1em;
   display: inline-block;
-  vertical-align: middle;
 }
 .legend-swatch.hardliner { background-color: #8b0000a1; }
 .legend-swatch.conservative { background-color: #2E5C8A; }
 .legend-swatch.technocrat { background-color: #909090; }
 .legend-swatch.reformist { background-color: #3F9142; }
 .legend-swatch.nationalist { background-color: #6B4226; }
-
-.legend-label.hardliner { color: #8b0000a1; }
-.legend-label.conservative { color: #2E5C8A; }
-.legend-label.technocrat { color: #909090; }
-.legend-label.reformist { color: #3F9142; }
-.legend-label.nationalist { color: #6B4226; }
 
 .tooltip-text {
     text-decoration: underline;
