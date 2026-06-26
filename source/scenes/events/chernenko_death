@@ -2,7 +2,7 @@ title: The Death of Konstantin Chernenko
 new-page: true
 subtitle: The Politburo convenes...
 tags: event
-view-if: year = 1985 and month = 3
+view-if: year == 1985 and month >= 3
 max-visits: 1
 on-arrival: {!
 var data = [
