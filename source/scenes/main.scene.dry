@@ -12,6 +12,13 @@ if (Q.advisor_action_timer <= 0) {
 !}
 max-cards: 3
 
+<div class="leader-card">
+<h2 class="leader-party">Communist Party of the Soviet Union (<span class="leader-abbr">CPSU</span>)</h2>
+<img class="leader-portrait" src="img/gorbachev.jpg">
+<div class="leader-name">Mikhail Gorbachev</div>
+<div class="leader-role">General Secretary</div>
+</div>
+
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
 - @party
@@ -32,6 +39,13 @@ if (Q.advisor_action_timer <= 0) {
 }
 !}
 max-cards: 4
+
+<div class="leader-card">
+<h2 class="leader-party">Communist Party of the Soviet Union (<span class="leader-abbr">CPSU</span>)</h2>
+<img class="leader-portrait" src="img/gorbachev.jpg">
+<div class="leader-name">Mikhail Gorbachev</div>
+<div class="leader-role">General Secretary</div>
+</div>
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
