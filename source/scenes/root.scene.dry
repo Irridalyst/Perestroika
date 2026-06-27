@@ -325,10 +325,13 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Gorbachev";
-// starting chancellor: Nikolai Ryzhkov
-Q.chancellor = "Ryzhkov";
-Q.rsfsr_president = "Vorotnikov";
+Q.general_secretary = "Chernenko";
+Q.general_secretary_party = 'CPSU-H"
+// starting premier: Nikolai Tikhonov
+Q.premier = "Tikhonov";
+Q.premier_party = 'CPSU-H'
+Q.rsfsr_president = "Yasnov";
+Q.rsfsr_president_party = 'CPSU-H'
 Q.spd_in_government = 1;
 Q.z_in_government = 0;
 Q.ddp_in_government = 0;
@@ -471,7 +474,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'education_science', 'curriculum',
             // events
             'emergency_cuts', 'unemployment_insurance',
-            'sa_ban', 'sh_ban', 'papen_chancellor',
+            'sa_ban', 'sh_ban', 'papen_premier',
             'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
             'high_inflation', 'banking_crisis', 'march_on_berlin',
             'understanding_enemy', 'schleichers_schemes'];

@@ -10,7 +10,7 @@ var data = [
     {id: 'nationalist', color: '#6B4226', seats: 15},
     {id: 'technocrat', color: '#909090', seats: 51},
     {id: 'conservative', color: '#2E5C8A', seats: 105},
-    {id: 'hardliner', color: '#8b0000a1', seats: 114}
+    {id: 'hardliner', color: '#8b0000', seats: 114}
 ];
 if (window && d3) {
     var width = 500;
@@ -31,9 +31,9 @@ if (window && d3) {
 
 = CPSU Politburo Session, March 1985
 
-<span style="color: #8b0000a1;">**Konstantin Chernenko**</span>, fifth General Secretary of the Soviet Union, passed away after a long battle with chronic emphysema among other health related issues. Chernenko's death marks the third Soviet leader to die in two and a half years, a deeply troubling sign for our nation's future.
+<span style="color: #8b0000;">**Konstantin Chernenko**</span>, fifth General Secretary of the Soviet Union, passed away after a long battle with chronic emphysema among other health related issues. Chernenko's death marks the third Soviet leader to die in two and a half years, a deeply troubling sign for our nation's future.
 
-In practice, <span style="color: #8b0000a1;">**Chernenko**</span>'s brief tenure had seen him share power with Defense Minister Dmitry Ustinov and Foreign Minister Andrei Gromyko, the three men forming an informal triumvirate at the top of the Soviet state as Chernenko's health steadily declined. With his passing, the Politburo wasted no time, convening within a day to settle the question.
+In practice, <span style="color: #8b0000;">**Chernenko**</span>'s brief tenure had seen him share power with Defense Minister Dmitry Ustinov and Foreign Minister Andrei Gromyko, the three men forming an informal triumvirate at the top of the Soviet state as Chernenko's health steadily declined. With his passing, the Politburo wasted no time, convening within a day to settle the question.
 
 <svg id="cpsu_chart" width="500" height="250"></svg>
 

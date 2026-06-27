@@ -753,7 +753,7 @@ table {
     fill: #8b0000;
 }
 .seat.conservative {
-    fill: #18426c;
+    fill: #2E5C8A;
 }
 .seat.technocrat {
     fill: #909090;
@@ -763,6 +763,15 @@ table {
 }
 .seat.nationalist {
     fill: #6B4226;
+}
+
+.gov-name.cpsu-h, .gov-party.cpsu-h { color: #8b0000; }
+.gov-name.cpsu-c, .gov-party.cpsu-c { color: #2E5C8A; }
+.gov-name.cpsu-t, .gov-party.cpsu-t { color: #909090; }
+.gov-name.cpsu-r, .gov-party.cpsu-r { color: #3F9142; }
+.gov-name.cpsu-n, .gov-party.cpsu-n { color: #6B4226; }
+.gov-party {
+  font-weight: bold;
 }
 
 .legend-swatch {
