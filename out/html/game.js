@@ -272,7 +272,22 @@ window._musicLoadTrack = function(index) {
     var track = window._musicPlaylist[index];
     window._musicAudio.src = track.src;
     var nameEl = document.getElementById('boombox-track-name');
-    if (nameEl) { nameEl.textContent = track.name; }
+    if (nameEl) {
+        nameEl.textContent = track.name;
+        // shrink font size for longer track names so they fit without clipping
+        var len = track.name.length;
+        var size;
+        if (len <= 12) {
+            size = 0.7;
+        } else if (len <= 18) {
+            size = 0.6;
+        } else if (len <= 24) {
+            size = 0.52;
+        } else {
+            size = 0.45;
+        }
+        nameEl.style.fontSize = size + 'em';
+    }
 };
 
 window._musicPlay = function() {
@@ -302,6 +317,12 @@ window._musicPrev = function() {
     if (window._musicPlaying) { window._musicAudio.play(); }
     window._musicUpdateUI();
 };
+
+window._musicSetVolume = function(value) {
+    window._musicAudio.volume = value / 100;
+};
+// apply the initial volume on load
+window._musicAudio.volume = 0.7;
 
 window._musicUpdateUI = function() {
     var playBtn = document.getElementById('boombox-play');
