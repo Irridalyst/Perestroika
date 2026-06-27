@@ -314,6 +314,9 @@ window._musicUpdateUI = function() {
 window._musicAudio.addEventListener('ended', function() {
     window._musicNext();
 });
+window._musicAudio.addEventListener('error', function(e) {
+    console.error('Audio error on track', window._musicIndex, window._musicPlaylist[window._musicIndex], window._musicAudio.error);
+});
   window.justLoaded = true;
   window.statusTab = "status";
   window.newsTab = "news";
