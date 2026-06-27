@@ -262,7 +262,7 @@
 window._musicPlaylist = [
     { name: "Wide is my Motherland", src: "music/1987_1989/WideIsMyMotherland.mp3" },
     { name: "WDTMB", src: "music/1987_1989/WDTMB.mp3" },
-    { name: "Aviamarch", src: "Aviamarch.mp3" }
+    { name: "Aviamarch", src: "music/1987_1989/Aviamarch.mp3" }
 ];
 window._musicIndex = 0;
 window._musicAudio = new Audio();
