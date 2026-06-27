@@ -274,19 +274,14 @@ window._musicLoadTrack = function(index) {
     var nameEl = document.getElementById('boombox-track-name');
     if (nameEl) {
         nameEl.textContent = track.name;
-        // shrink font size for longer track names so they fit without clipping
-        var len = track.name.length;
-        var size;
-        if (len <= 12) {
-            size = 0.7;
-        } else if (len <= 18) {
-            size = 0.6;
-        } else if (len <= 24) {
-            size = 0.52;
-        } else {
-            size = 0.45;
+        nameEl.style.fontSize = '0.7em';
+        // shrink in small steps until the text actually fits its container
+        var attempts = 0;
+        while (nameEl.scrollWidth > nameEl.clientWidth && attempts < 15) {
+            var current = parseFloat(getComputedStyle(nameEl).fontSize);
+            nameEl.style.fontSize = (current - 1) + 'px';
+            attempts++;
         }
-        nameEl.style.fontSize = size + 'em';
     }
 };
 
