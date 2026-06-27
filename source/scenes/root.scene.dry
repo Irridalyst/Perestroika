@@ -614,6 +614,9 @@ go-to: 1985_main
 
 @1985_main
 new-page: true
+on-arrival: {!
+if (window._musicPlay && !window._musicPlaying) { window._musicPlay(); }
+!}
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1985
