@@ -50,7 +50,7 @@ In practice, <span style="color: #8b0000;">**Chernenko**</span>'s brief tenure h
 
 @gorby
 title: The Politburo convenes...
-on-arrival: chernenko_dead = 1; gorbachev_gs = 1; general_secretary_name = "Mikhail Gorbachev"; general_secretary_role = "General Secretary"; general_secretary_img = "img/portraits/GorbachevMikhail.jpg";
+on-arrival: on-arrival: chernenko_dead = 1; gorbachev_gs = 1; general_secretary_name = "Mikhail Gorbachev"; general_secretary_role = "General Secretary"; general_secretary_img = "img/portraits/GorbachevMikhail.jpg"; general_secretary = "Gorbachev"; general_secretary_party = "CPSU-C";
 
 <div class="face-figure-right"><img class="face-img" src="img/portraits/GorbachevMikhail.jpg"></div>
 
