@@ -184,6 +184,7 @@ blockquote + blockquote.attribution {
 /* This is mostly copied from undum. */
 #mid_panel {
   margin: 0 16rem;
+  overflow: hidden;
 }
 #page {
   margin: 0 auto;
@@ -656,8 +657,8 @@ img {
       margin-left: 0.4em;
   }
   #mid_panel {
-      margin-left: 16.5rem;
-      margin-right: 16.5rem;
+      margin-left: 15rem;
+      margin-right: 15rem;
   }
 }
 /* mobile: move the stat box to the top if the screen is too small,
