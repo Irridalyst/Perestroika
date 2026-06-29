@@ -56,33 +56,17 @@ GDP: $2.20 trillion
 
 @politics
 
-= Inter-party Relations
-
-
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
-
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
-
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
-
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
-
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
-
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
-
 = Internal Factions of the CPSU
 
-{!<span class="tooltip-text" title="The Old Guard consists of hardline Marxist-Leninists who oppose major reforms and seek to preserve centralized Party control.">Old Guard</span>!} strength: [+ old_guard_strength : strength +], dissent: [+ old_guard_dissent : dissent +]
+<span class="tooltip-wrap">Hardliner<span class="tooltip-tip">Hardliners consist of orthodox Marxist-Leninists who oppose major reforms and seek to preserve centralized Party control.</span></span> strength: [+ old_guard_strength : strength +], dissent: [+ old_guard_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Centrists are moderate reformers who support cautious economic and political changes within the framework of the CPSU.">Centrists</span>!} strength: [+ centrist_strength : strength +], dissent: [+ centrist_dissent : dissent +]
+<span class="tooltip-wrap">Conservative<span class="tooltip-tip">Conservatives are moderate reformers who support cautious economic and political changes within the framework of the CPSU.</span></span> strength: [+ centrist_strength : strength +], dissent: [+ centrist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Reformists favor greater democratization, transparency, and decentralization, often pushing the boundaries of Party orthodoxy.">Reformists</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+<span class="tooltip-wrap">Reformist<span class="tooltip-tip">Reformists favor greater democratization, transparency, and decentralization, often pushing the boundaries of Party orthodoxy.</span></span> strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Technocrats are non-ideological managers and economists focused on practical governance and efficiency in the planned economy.">Technocrats</span>!} strength: [+ technocrat_strength : strength +], dissent: [+ technocrat_dissent : dissent +]
+<span class="tooltip-wrap">Technocrat<span class="tooltip-tip">Technocrats are non-ideological managers and economists focused on practical governance and efficiency in the planned economy.</span></span> strength: [+ technocrat_strength : strength +], dissent: [+ technocrat_dissent : dissent +]
 
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
-
+<span class="tooltip-wrap">Nationalist<span class="tooltip-tip">Nationalists prioritize national strength and central authority over strict ideological orthodoxy.</span></span> strength: [+ nationalist_strength : strength +], dissent: [+ nationalist_dissent : dissent +]
 
 @paramilitaries
 on-arrival: {!
