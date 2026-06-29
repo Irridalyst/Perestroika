@@ -22,17 +22,13 @@ Resources available: [+ resources +]
 
 CPSU position: in government
 
-[? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
-
-[? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
-
 Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
 General Secretary: [? if general_secretary_party = 'CPSU-H': <span class="gov-name cpsu-h">[+ general_secretary +]</span> (<span class="gov-party cpsu-h">CPSU-H</span>) ?][? if general_secretary_party = 'CPSU-C': <span class="gov-name cpsu-c">[+ general_secretary +]</span> (<span class="gov-party cpsu-c">CPSU-C</span>) ?][? if general_secretary_party = 'CPSU-T': <span class="gov-name cpsu-t">[+ general_secretary +]</span> (<span class="gov-party cpsu-t">CPSU-T</span>) ?][? if general_secretary_party = 'CPSU-R': <span class="gov-name cpsu-r">[+ general_secretary +]</span> (<span class="gov-party cpsu-r">CPSU-R</span>) ?][? if general_secretary_party = 'CPSU-N': <span class="gov-name cpsu-n">[+ general_secretary +]</span> (<span class="gov-party cpsu-n">CPSU-N</span>) ?]
 
-<span class="tooltip-wrap">Premier<span class="tooltip-tip"><img src="img/ussr_emblem.png">the head of the government of the Soviet Union during the existence of the Council of Ministers of the Soviet Union.</span></span>
+<span class="tooltip-wrap">Premier<span class="tooltip-tip"><img src="img/ussr_emblem.png">Head of the government of the Soviet Union during the existence of the Council of Ministers of the Soviet Union.</span></span>
 : [? if premier_party = 'CPSU-H': <span class="gov-name cpsu-h">[+ premier +]</span> (<span class="gov-party cpsu-h">CPSU-H</span>) ?][? if premier_party = 'CPSU-C': <span class="gov-name cpsu-c">[+ premier +]</span> (<span class="gov-party cpsu-c">CPSU-C</span>) ?][? if premier_party = 'CPSU-T': <span class="gov-name cpsu-t">[+ premier +]</span> (<span class="gov-party cpsu-t">CPSU-T</span>) ?][? if premier_party = 'CPSU-R': <span class="gov-name cpsu-r">[+ premier +]</span> (<span class="gov-party cpsu-r">CPSU-R</span>) ?][? if premier_party = 'CPSU-N': <span class="gov-name cpsu-n">[+ premier +]</span> (<span class="gov-party cpsu-n">CPSU-N</span>) ?]
 
 <span class="tooltip-wrap">RSFSR President<span class="tooltip-tip"><img src="img/rsfsr_flagmap.png">Head of the Russian Soviet Federative Socialist Republic, the largest and most populous Union Republic.</span></span>
