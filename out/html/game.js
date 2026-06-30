@@ -261,7 +261,7 @@
 // --- Boombox music player ---
 window._musicPlaylist = [
     { name: "Wide is my Motherland", src: "music/1987_1989/WideIsMyMotherland.mp3" },
-    { name: "WDTMB", src: "music/1987_1989/WDTMB.mp3" },
+    { name: "Where does the Motherland Begin?", src: "music/1987_1989/WDTMB.mp3" },
     { name: "Aviamarch", src: "music/1987_1989/Aviamarch.mp3" },
     { name: "Farewell of Slavianka", src: "music/1987_1989/Slavianka.mp3" },
     { name: "Smuglianka", src: "music/1987_1989/Smuglianka.mp3" }
